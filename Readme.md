@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Комар](https://up.htmlacademy.ru/adaptive/13/user/236662).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Распономарев`.
 
 ---
 
