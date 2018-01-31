@@ -1,0 +1,28 @@
+.promo-ad {
+  width:100%;
+  max-width:400px;
+  height:289px;
+  background:url('../img/gift-photo-mobile@1x.jpg') no-repeat;
+  background-size:100% auto;
+  background-clip:content-box;
+  box-sizing:border-box;
+  border:20px solid #ffffff;
+  margin:0 auto;
+  text-align:center;
+}
+
+.promo-ad__gift {
+  filter:invert(100%);
+  margin-top:60px;
+  
+}
+
+.promo-ad__text {
+  display:block;
+  font-size:16px;
+  line-height:150%;
+  font-family:Arial;
+  color:$color-white;  
+  padding:20px 0 0 0;
+ 
+}

@@ -3,29 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo-image">
-        <img src="http://placehold.it/40x40" width="40" height="40" alt="" class="page-header__logo-image-item">
+        <img src="img/icon-logo-mobile.svg" width="40" height="40" alt="" class="page-header__logo-image-item">
       </div>
       <div class="page-header__logo-text">
-        <img src="http://placehold.it/100x20" width="100" height="20" alt=""  class="page-header__logo-text-item">
+        <img src="img/logo-mobile-header.svg" width="100" height="20" alt=""  class="page-header__logo-text-item">
       </div>
       <a href="" class="page-header__menu-burger">
-        <img src="http://placehold.it/30x20" width="30" height="20" alt=""  class="page-header__menu-burger-img">
+        <img src="img/icon-mobile-menu.svg" width="30" height="20" alt=""  class="page-header__menu-burger-img">
       </a>
     </div>
     <nav class="page-header__menu-wrapper">
       <div class="page-header__menu-item">
-      <a href="" class="page-header__menu-link">Главная</a>
+      <a href="index.html" class="page-header__menu-link">Главная</a>
       </div>
       <div class="page-header__menu-item">
-      <a href="" class="page-header__menu-link">Каталог продукции</a>
+      <a href="catalog.html" class="page-header__menu-link">Каталог продукции</a>
       </div>
       <div class="page-header__menu-item">
-      <a href="" class="page-header__menu-link">Подбор программы</a>
+      <a href="form.html" class="page-header__menu-link">Подбор программы</a>
       </div>
     </nav>
   </header>
@@ -38,16 +39,16 @@
     <form action="https://echo.htmlacademy.ru" method="post">
     <div class="program-form__wrapper">
           <div class="program-form__row">
-              <label class="program-form__label" for="username">Имя:*</label>
-              <input type="text" value="Барсик" name="name" id="username">
+              <label class="program-form__label-input" for="username">Имя:*</label>
+              <input type="text" value="Барсик" name="name" id="username" class="program-form__input">
           </div>
           <div class="program-form__row">
-              <label class="program-form__label" for="weight">Вес(кг):*</label>
-              <input type="text" value="" name="weight" id="weight">
+              <label class="program-form__label-input" for="weight">Вес(кг):*</label>
+              <input type="text" value="" name="weight" id="weight" class="program-form__input">
           </div>
           <div class="program-form__row">
-              <label class="program-form__label" for="age">Возраст(лет):</label>
-              <input type="text" value="" name="age" id="age">
+              <label class="program-form__label-input" for="age">Возраст(лет):</label>
+              <input type="text" value="" name="age" id="age" class="program-form__input">
           </div>
     </div>
     <div class="program-form__wrapper">
@@ -64,23 +65,22 @@
     <h2 class="h2-title">Контактные данные (владельца кота)</h2>
     <div class="program-form__wrapper">
       <div class="program-form__row">
-          <label class="program-form__label">E-mail:*</label>
-          <input type="email" value=""  name="email">
-          <img src="http://placehold.it/20x20">
+          <label class="program-form__label-input">E-mail:*</label>
+          <input type="email" value=""  name="email"  class="program-form__input">
+          <img src="img/icon-mail.svg" width="17" height="13" alt="" class="program-form__email">
       </div>
       <div class="program-form__row">
-          <label class="program-form__label">Телефон:*</label>
-          <input type="phone" value="" name="phone">
-          <img src="http://placehold.it/20x20">
+          <label class="program-form__label-input">Телефон:*</label>
+          <input type="phone" value="" name="phone"  class="program-form__input">
+          <img src="img/icon-phone.svg" width="20" height="20" alt=""  class="program-form__phone">
       </div>
     </div>
     <h2 class="h2-title">Комментарий</h2>
-    <div class="program-form__wrapper">
-      <textarea placeholder="Расскажите о повадках вашего кота" class="program-form__textarea" name="comment" rows="5" value="">
-      </textarea>
+    <div class="program-form__wrapper-2">
+      <textarea placeholder="Расскажите о повадках вашего кота" class="program-form__textarea" name="comment" rows="5" value=""></textarea>
     </div>
     <h2 class="h2-title">Дополнительно</h2>
-    <div class="program-form__wrapper">
+    <div class="program-form__wrapper-2">
       <div class="program-form__row">
         <input type="checkbox" checked  name="sugar" id="sugar"><label for="sugar" class="program-form__label">Сахарозаменитель</label>
       </div>
@@ -94,39 +94,42 @@
         <input type="checkbox"  name="vitamins" id="vitamins"><label for="vitamins" class="program-form__label">Витамины</label>
       </div>
     </div>
-    <button type="submit" class="send-claim-button">Отправить заявку</button>
-    <div class="program-form__wrapper">
+    <div class="program-form__wrapper-2">
+      <button type="submit" class="send-claim-button">Отправить заявку</button>
+    </div>
       <p class="program-form__note-text">
       * - Обязательные поля
       </p>
-    </div>
   </div>
-      <div class="map">
-      <div class="map__text">
-      Приглашаем к сотрудничеству дилеров!
-      </div>
-      <div class="map__address">
-      ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+    <div class="map map_bg">
+      <div class="map__wrapper">
+        <div class="map__text">
+        Приглашаем к сотрудничеству дилеров!
+        </div>
+        <div class="map__address">
+        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </div>
       </div>
       <div class="map__yandex">
+        
       </div>
     </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__logo-text">
-      <a href="" class="page-footer__link-logo"><img src="http://placehold.it/130x25"  width="130" height="25" alt=""  class="page-footer__logo-text-img"></a>
+      <a href="" class="page-footer__link-logo"><img src="img/logo-mobile-header.svg"  width="130" height="25" alt=""  class="page-footer__logo-text-img"></a>
     </div>
     <div class="page-footer__socials">
-      <a href="" class="page-footer__link-socials"><img src="http://placehold.it/16x16" class="page-footer__vk-icon"  width="16" height="16" alt=""></a>
-      <a href="" class="page-footer__link-socials"><img src="http://placehold.it/16x16" class="page-footer__insta-icon"  width="16" height="16" alt=""></a>
-      <a href="" class="page-footer__link-socials"><img src="http://placehold.it/16x16" class="page-footer__fb-icon"  width="16" height="16" alt=""></a>
+      <a href="" class="page-footer__link-socials"><img src="img/icon-vk-mobile.svg" class="page-footer__vk-icon"  width="16" height="16" alt=""></a>
+      <a href="" class="page-footer__link-socials"><img src="img/icon-insta-mobile.svg" class="page-footer__insta-icon"  width="16" height="16" alt=""></a>
+      <a href="" class="page-footer__link-socials"><img src="img/icon-fb-mobile.svg" class="page-footer__fb-icon"  width="16" height="16" alt=""></a>
     </div>
     <div class="page-footer__copyrights">
       <div class="page-footer__text">
       <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__text-link">HTML Academy</a>
       </div>
       <div class="page-footer__image">
-      <a href="https://htmlacademy.ru/intensive/adaptive"  target="_blank"  class="page-footer__image-link"><img src="http://placehold.it/30x35" width="30" height="35" alt="" class="page-footer__image-item"></a>
+      <a href="https://htmlacademy.ru/intensive/adaptive"  target="_blank"  class="page-footer__image-link"><img src="img/logo-htmlacademy.svg" width="30" height="35" alt="" class="page-footer__image-item"></a>
       </div>
     </div>
   </footer>

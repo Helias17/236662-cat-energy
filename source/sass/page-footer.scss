@@ -1,0 +1,36 @@
+.page-footer {
+  background-color:$color-grey;
+  padding:20px;
+}
+
+.page-footer__logo-text, .page-footer__socials {
+  padding:20px 0 20px 0;
+  text-align:center;
+  border-bottom:1px solid $color-d9d9d9;
+}
+
+.page-footer__vk-icon {
+  margin-right:38px;
+}
+
+.page-footer__insta-icon {
+  margin-right:38px;
+}
+
+.page-footer__copyrights {
+  display:flex;  
+  justify-content:space-between;
+  align-items:center;
+  padding-top:20px;
+}
+
+.page-footer__text {
+  font-size:16px;
+  line-height:16px;
+  font-family:Arial;  
+}
+
+.page-footer__text-link {
+  color:$color-text;
+  text-decoration:none;
+}
