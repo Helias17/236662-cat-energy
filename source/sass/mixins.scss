@@ -1,0 +1,17 @@
+@mixin green-button {
+  display:block;
+  height:40px;
+  color:$color-white;
+  background-color:$color-green;
+  font-size:14px;
+  line-height:40px;
+  font-family:Oswald;
+  text-transform:uppercase;
+  text-decoration:none;
+}
+@mixin title-text {
+  font-weight:normal;
+  color:#111111;
+  font-size:36px;
+  margin:0 0 30px 0;
+}

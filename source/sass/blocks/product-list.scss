@@ -1,0 +1,28 @@
+.product-item {
+  display:flex;
+  flex-wrap:wrap;
+  border-top:1px solid $color-ededed;
+  padding:20px;
+}
+.product-item__button {
+  @include green-button;
+  border-width:0;
+  width:100%;
+  margin-bottom:5px;
+  font-size:16px;
+  line-height:20px;
+}
+.product-item__title-link {
+  font-family:Oswald;
+  font-size:16px;
+  line-height:20px;
+  color:$color-111111;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+.product-item__info {
+  font-size:12px;
+  line-height:16px;
+  font-family:Arial;
+  color:$color-text;
+}

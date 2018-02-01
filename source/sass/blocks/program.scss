@@ -1,0 +1,30 @@
+.program {
+  background-color:$color-grey;
+  margin:20px 20px 0 20px;
+  padding:20px;
+}
+.program__logo {
+  float:left;
+  margin:0 10px 0 0;
+}
+.program__title {
+  font-size:24px;
+  color:#111111;
+  margin:0px;
+  text-transform:uppercase;
+}
+.program__desc {
+  clear:both;
+  font-size:14px;
+  line-height:18px;
+  font-family:Arial;
+  color:$color-text;
+  padding:20px 0 20px 0;
+  border-bottom:1px solid #d9d9d9;
+}
+.program__link {
+  text-transform:uppercase;
+  font-size:16px;
+  color:#111111;
+  text-decoration:none;
+}
