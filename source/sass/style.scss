@@ -4,10 +4,10 @@ $color-grey: #f2f2f2;
 $color-black: #000000;
 $color-text: #444444;
 $color-cdcdcd: #cdcdcd;
+$color-menu: #111111;
 $color-111111: #111111;
 $color-d9d9d9: #d9d9d9;
 $color-ededed: #ededed;
-
 @mixin green-button {
   display:block;
   height:40px;
@@ -18,41 +18,41 @@ $color-ededed: #ededed;
   font-family:Oswald;
   text-transform:uppercase;
   text-decoration:none;
-  
 }
-
+@mixin title-text {
+  font-weight:normal;
+  color:#111111;
+  font-size:36px;
+  margin:0 0 30px 0;
+}
 .catalog-title {
-  font-family: Oswald; 
+  font-family: Oswald;
   font-weight:normal;
   font-size:36px;
   margin:20px 20px 30px 20px;
 }
-
 .h2-title {
   display:block;
-  font-family: Oswald; 
+  font-family: Oswald;
   font-weight:normal;
   font-size:24px;
+  color:#111111;
   margin:20px 0px 10px 20px;
-  
 }
-
-body { 
+body {
   padding:0px;
   margin:0px;
-  background: #ffffff; 
-  }
-
+  background: #ffffff;
+  font-family: Oswald;
+  font-weight:normal;
+}
 @font-face {
-    font-family: Oswald; 
-    src: url(../fonts/oswaldregular.woff); 
-   }
-   
-@font-face {
-    font-family: Oswald2; 
-    src: url(../fonts/oswaldregular.woff2); 
-   }
-
+    font-family: Oswald;
+    font-style:normal;
+    src: local('Oswald'),
+    url('../fonts/oswaldregular.woff2') format('woff2'),
+    url('../fonts/oswaldregular.woff') format('woff');
+}
 @import "page-header.scss";
 @import "promo.scss";
 @import "program.scss";
@@ -65,5 +65,3 @@ body {
 @import "more-products-wrapper.scss";
 @import "promo-ad.scss";
 @import "program-form.scss";
-
-

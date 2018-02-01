@@ -1,33 +1,25 @@
 .more-products-wrapper {
   padding:20px;
 }
-
 .more-products {
   display:flex;
   flex-wrap:wrap;
   justify-content:space-between;
   border-top:1px solid $color-cdcdcd;
 }
-
 .more-products__title {
-  font-family: Oswald; 
   font-size:16px;
-  line-height:16px; 
-color:#222222;  
+  line-height:16px;
+  color:#222222;
   text-transform:uppercase;
   width:100%;
 }
-
 .more-products__size, .more-products__price {
   font-size:14px;
   line-height:14px;
   font-family:Arial;
-  color:$color-text;  
-  
+  color:$color-text;
 }
-
-
-
 .more-products__button {
   @include green-button;
   width:100%;
