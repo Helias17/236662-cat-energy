@@ -48,7 +48,7 @@
   margin:0 0 0 15px;
 }
 .program-form__textarea {
-font-family:Oswald;
+  font-family:Oswald;
   border:1px solid #e6e6e6;
   font-size:16px;
   line-height:18px;
@@ -57,12 +57,13 @@ font-family:Oswald;
   width:100%;
   padding:15px;
 }
-.send-claim-button {
+.program__send-claim-button {
   @include green-button;
   width:100%;
   border-width:0;
   font-size:16px;
   line-height:20px;
+  margin-bottom:25px;
 }
 .program-form__note-text {
   font-size:14px;
@@ -71,6 +72,6 @@ font-family:Oswald;
   color:$color-text;
   text-transform:none;
   text-align:center;
-  margin:0 0 30px 0;
+  margin:0;
   padding:0px;
 }

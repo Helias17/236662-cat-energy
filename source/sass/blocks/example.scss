@@ -39,6 +39,7 @@
   text-transform:uppercase;
 }
 .example__item-desc {
+  width:65px;
   font-size:12px;
   line-height:12px;
   font-family:Arial;
@@ -62,7 +63,7 @@
   display:flex;
   justify-content:center;
   align-items:center;
-  margin-top:25px;
+  padding-top:25px;
 }
 .example__progressbar-text {
   font-size:16px;

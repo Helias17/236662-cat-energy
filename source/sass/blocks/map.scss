@@ -1,6 +1,5 @@
 .map {
-  padding:20px;
-  margin:10px 0 20px 0;
+  margin:0;
 }
 .map_bg {
   background-color:$color-grey;
@@ -13,13 +12,16 @@
   line-height:20px;
   color:$color-111111;
   text-transform:uppercase;
-  margin-right:10px;
-  padding:0;
+  padding:30px 10px 30px 20px;
 }
 .map__address {
   font-size:14px;
   line-height:20px;
   font-family:Arial;
   color:$color-text;
-  padding:0;
+  padding:30px 20px 30px 10px;
+}
+.map__yandex {
+  height:365px;
+  background:url('../img/moscow-city-map.jpg') no-repeat;
 }

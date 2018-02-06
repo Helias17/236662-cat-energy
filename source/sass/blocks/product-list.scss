@@ -26,3 +26,42 @@
   font-family:Arial;
   color:$color-text;
 }
+.product-item_all-products {
+  display:block;
+  border-top:1px solid $color-ededed;
+  border-bottom:1px solid $color-ededed;
+  padding:20px;
+  text-align:center;
+}
+.product-item__all-products-plus {
+  text-align:center;
+  transform: rotate(45deg);
+  filter:opacity(0.3);
+  margin:10px 0;
+}
+.product-item__all-products-text {
+  font-family: Oswald;
+  font-size:16px;
+  line-height:20px;
+  color:$color-111111;
+  text-transform:uppercase;
+  margin:10px 0 0 0;
+  padding:0;
+}
+.product-item__all-products-small-text {
+  font-size:12px;
+  line-height:16px;
+  font-family:Arial;
+  color:$color-text;
+}
+.product-item__all-products-button {
+  @include green-button;
+  width:100%;
+  border-width:0;
+  color:#222222;
+  background-color:#f2f2f2;
+  font-size:16px;
+  line-height:20px;
+  margin-top:20px;
+  margin-bottom:5px;
+}

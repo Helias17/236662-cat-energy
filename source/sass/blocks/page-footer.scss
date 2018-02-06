@@ -7,11 +7,10 @@
   text-align:center;
   border-bottom:1px solid $color-d9d9d9;
 }
-.page-footer__vk-icon {
+.page-footer__vk-icon, .page-footer__insta-icon, .page-footer__fb-icon {
   margin-right:38px;
-}
-.page-footer__insta-icon {
-  margin-right:38px;
+  filter:opacity(70%);
+  vertical-align:middle;
 }
 .page-footer__copyrights {
   display:flex;
