@@ -22,3 +22,56 @@
   @include green-button;
   margin:0 20px 0 20px;
 }
+@media all and (min-width: 768px) {
+
+  .promo {
+    background:none;
+    text-align:left;
+    margin-left:60px;
+  }
+  .promo__title {
+    color:#111111;
+    font-size:60px;
+    line-height:60px;
+  }
+  .promo__desc {
+    color:#111111;
+    font-size:20px;
+
+  }
+  .promo__link {
+    @include green-button;
+    width:245px;
+    height:52px;
+    font-size:20px;
+    line-height:50px;
+    text-align:center;
+  }
+}
+@media all and (min-width: 1200px) {
+  .promo-wrapper {
+    display:flex;
+    justify-content:space-between;
+    padding:50px 110px;
+  }
+  .promo__title {
+    width:430px;
+  }
+  .promo {
+    position:relative;
+    height:680px;
+    box-sizing:border-box;
+    background:url('../img/index-background-mobile@1x.jpg')  no-repeat right top;
+    background-size:680px auto;
+    padding-top:145px;
+    margin-left:170px;
+    padding-left:0;
+  }
+  .promo__image {
+    position:absolute;
+    top:150px;
+    left:350px;
+    width:552px;
+    height:499px;
+  }
+}

@@ -20,18 +20,18 @@
     </div>
     <nav class="page-header__menu-wrapper">
       <div class="page-header__menu-item">
-      <a href="index.html" class="page-header__menu-link">Главная</a>
+      <a href="index.html" class="page-header__menu-link page-header__menu-link_color">Главная</a>
       </div>
       <div class="page-header__menu-item">
-      <a href="catalog.html" class="page-header__menu-link">Каталог продукции</a>
+      <a href="catalog.html" class="page-header__menu-link  page-header__menu-link_color">Каталог продукции</a>
       </div>
       <div class="page-header__menu-item">
-      <a href="form.html" class="page-header__menu-link">Подбор программы</a>
+      <a href="form.html" class="page-header__menu-link  page-header__menu-link_color">Подбор программы</a>
       </div>
     </nav>
   </header>
   <main class="page-main">
-  <h1 class="catalog-title">Каталог продукции</h1>
+  <h1 class="title-catalog">Каталог продукции</h1>
   <div class="product-list">
     <div class="product-item">
       <div class="product-item__image">
@@ -45,7 +45,7 @@
           Cat Energy<br> PRO 500 г
           </a>
         </p>
-        <table border="0">
+        <table border="0" cellpadding="0" cellspacing="0" class="product-item__desc">
         <tr>
         <td>
         Объем
@@ -86,7 +86,7 @@
           Cat Energy<br> PRO 1000 г
           </a>
         </p>
-        <table border="0">
+        <table border="0" cellpadding="0" cellspacing="0" class="product-item__desc">
         <tr>
         <td>
         Объем
@@ -127,7 +127,7 @@
           Cat Energy<br> PRO 500 г
           </a>
         </p>
-        <table border="0">
+        <table border="0" cellpadding="0" cellspacing="0" class="product-item__desc">
         <tr>
         <td>
         Объем
@@ -168,7 +168,7 @@
           Cat Energy<br> PRO 1000 г
           </a>
         </p>
-        <table border="0">
+        <table border="0" cellpadding="0" cellspacing="0" class="product-item__desc">
         <tr>
         <td>
         Объем
@@ -209,7 +209,7 @@
           Cat Energy<br> Slim 500 г
           </a>
         </p>
-        <table border="0">
+        <table border="0" cellpadding="0" cellspacing="0" class="product-item__desc">
         <tr>
         <td>
         Объем
@@ -250,7 +250,7 @@
           Cat Energy<br> Slim 1000 г
           </a>
         </p>
-        <table border="0" cellpadding=0 cellspacing=0  class="product-item__table">
+        <table border="0" cellpadding=0 cellspacing=0  class="product-item__desc">
         <tr>
         <td>
         Объем
@@ -291,7 +291,7 @@
           Cat Energy<br> Slim 500 г
           </a>
         </p>
-        <table border="0">
+        <table border="0"  cellpadding=0 cellspacing=0   class="product-item__desc">
         <tr>
         <td>
         Объем
@@ -320,74 +320,77 @@
       </div>
       <button class="product-item__button">Заказать</button>
     </div>
-  </div>
-  <div class="all-products">
-    <img src="img/icon-close.svg" height="25" width="25" alt="" class="all-products__plus">
-    <p class="all-products__text">
-    Показать еще 100500 товаров
-    </p>
-    <p class="all-products__small-text">
-    На самом деле вкусов гораздо больше!
-    </p>
-    <button class="all-products__button">Показать все</button>
-  </div>
-  <h2 class="h2-title">Дополнительные товары</h2>
-  <div class="more-products-wrapper">
-    <div class="more-products">
-      <p class="more-products__title">
-      Сахарозаменитель
+    <div class="product-item product-item_all-products">
+      <img src="img/icon-close.svg" height="25" width="25" alt="" class="product-item__all-products-plus">
+      <p class="product-item__all-products-text">
+      Показать еще 100500 товаров
       </p>
-      <div class="more-products__size">
-      1 упаковка
-      </div>
-      <div class="more-products__price">
-      100 р.
-      </div>
-      <button class="more-products__button">Заказать</button>
-    </div>
-    <div class="more-products">
-      <p class="more-products__title">
-      Питьевая вода
+      <p class="product-item__all-products-small-text">
+      На самом деле вкусов гораздо больше!
       </p>
-      <div class="more-products__size">
-      5 литров
-      </div>
-      <div class="more-products__price">
-      50 р.
-      </div>
-      <button class="more-products__button">Заказать</button>
+      <button class="product-item__all-products-button">Показать все</button>
     </div>
-    <div class="more-products">
-      <p class="more-products__title">
-      Молоко
-      </p>
-      <div class="more-products__size">
-      1 литр
-      </div>
-      <div class="more-products__price">
-      100 р.
-      </div>
-      <button class="more-products__button">Заказать</button>
+
     </div>
-      <div class="more-products">
-      <p class="more-products__title">
-      Витамины
-      </p>
-      <div class="more-products__size">
-      1 упаковка (30г)
+  <h2 class="title-h2">Дополнительные товары</h2>
+    <div class="promo-wrapper">
+      <div class="more-products__wrapper">
+        <div class="more-products">
+          <p class="more-products__title">
+          Сахарозаменитель
+          </p>
+          <div class="more-products__size">
+          1 упаковка
+          </div>
+          <div class="more-products__price">
+          100 р.
+          </div>
+          <button class="more-products__button">Заказать</button>
+        </div>
+        <div class="more-products">
+          <p class="more-products__title">
+          Питьевая вода
+          </p>
+          <div class="more-products__size">
+          5 литров
+          </div>
+          <div class="more-products__price">
+          50 р.
+          </div>
+          <button class="more-products__button">Заказать</button>
+        </div>
+        <div class="more-products">
+          <p class="more-products__title">
+          Молоко
+          </p>
+          <div class="more-products__size">
+          1 литр
+          </div>
+          <div class="more-products__price">
+          100 р.
+          </div>
+          <button class="more-products__button">Заказать</button>
+        </div>
+          <div class="more-products">
+          <p class="more-products__title">
+          Витамины
+          </p>
+          <div class="more-products__size">
+          1 упаковка (30г)
+          </div>
+          <div class="more-products__price">
+          300 р.
+          </div>
+          <button class="more-products__button">Заказать</button>
+        </div>
       </div>
-      <div class="more-products__price">
-      300 р.
+      <div class="promo-ad">
+        <img src="/img/icon-gift.svg" width="60" height="60" alt="" class="promo-ad__gift">
+        <p class="promo-ad__text">
+        Закажите все<br> и получите чехол для<br> кота в подарок!
+        </p>
       </div>
-      <button class="more-products__button">Заказать</button>
     </div>
-  </div>
-  <div class="promo-ad">
-    <img src="/img/icon-gift.svg" width="60" height="60" alt="" class="promo-ad__gift">
-    <p class="promo-ad__text">
-    Закажите все<br> и получите чехол для<br> кота в подарок!
-    </p>
-  </div>
     <div class="map map_bg">
       <div class="map__wrapper">
         <div class="map__text">
@@ -398,7 +401,7 @@
         </div>
       </div>
       <div class="map__yandex">
-
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0a8120e9b0a4e05892055985d48d0f79cf37f03d36669d750658070c6d336dcd&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
     </div>
   </main>

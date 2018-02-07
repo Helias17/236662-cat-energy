@@ -28,3 +28,34 @@
   color:#111111;
   text-decoration:none;
 }
+@media all and (min-width: 768px) {
+  .program {
+    margin:30px;
+    padding:80px 50px 60px 50px;
+  }
+  .program__logo {
+    float:right;
+  }
+  .program__title {
+    font-size:36px;
+  }
+  .program__desc {
+    font-size:16px;
+    line-height:24px;
+    border:none;
+    padding:0 0 40px 0;
+  }
+  .program__link {
+    font-size:20px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .program-wrapper {
+    display:flex;
+    margin:0 70px;
+  }
+  .program {
+    margin:40px;
+    padding:40px 50px 60px 50px;
+  }
+}

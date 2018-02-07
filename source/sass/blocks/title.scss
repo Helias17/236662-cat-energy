@@ -1,0 +1,44 @@
+.title-catalog {
+  font-family: Oswald;
+  font-weight:normal;
+  font-size:36px;
+  margin:20px 20px 30px 20px;
+}
+.title-h2 {
+  display:block;
+  font-family: Oswald;
+  font-weight:normal;
+  font-size:24px;
+  color:#111111;
+  margin:20px 0px 10px 20px;
+}
+
+@media all and (min-width: 768px) {
+  .title-catalog {
+    font-size:60px;
+    margin-left:30px;
+    margin-bottom:90px;
+    margin-top:35px;
+  }
+  .title-h2 {
+    font-size:36px;
+    margin-left:30px;
+  }
+  .title-h2_form {
+    margin-left:60px;
+    margin-bottom:60px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .title-catalog {
+    margin-top:180px;
+    margin-left:110px;
+  }
+  .title-h2 {
+    margin-left:110px;
+  }
+  .title-h2_form {
+    margin-top:60px;
+    margin-bottom:40px;
+  }
+}

@@ -1,22 +1,9 @@
-$color-white: #ffffff;
-$color-green: #68b738;
-$color-grey: #f2f2f2;
-$color-black: #000000;
-$color-text: #444444;
-$color-cdcdcd: #cdcdcd;
-$color-menu: #111111;
-$color-111111: #111111;
-$color-d9d9d9: #d9d9d9;
-$color-ededed: #ededed;
-@font-face {
-    font-family: Oswald;
-    font-style:normal;
-    src: local('Oswald'),
-    url('../fonts/oswaldregular.woff2') format('woff2'),
-    url('../fonts/oswaldregular.woff') format('woff');
-}
+
+@import "fonts.scss";
+@import "variables.scss";
 @import "base.scss";
 @import "mixins.scss";
+@import "blocks/title.scss";
 @import "blocks/page-header.scss";
 @import "blocks/promo.scss";
 @import "blocks/program.scss";
