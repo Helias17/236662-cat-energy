@@ -21,3 +21,46 @@
   font-family:Arial;
   color:$color-text;
 }
+@media all and (min-width: 768px) {
+  .features {
+    padding:30px;
+    border-bottom:1px solid #e6e6e6;
+  }
+  .features__item-wrapper {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+  }
+  .features__title {
+    font-size:60px;
+    margin-bottom:55px;
+  }
+  .features__desc {
+    font-size:16px;
+    line-height:24px;
+  }
+  .features__item {
+    width:230px;
+    height:230px;
+    flex-direction:column;
+    padding-right:20px;
+  }
+  .features__logo-1, .features__logo-2, .features__logo-3, .features__logo-4  {
+  background-color:$color-green;
+  margin-bottom:35px;
+  border:16px solid $color-green;
+  }
+}
+@media all and (min-width: 1200px) {
+.features {
+    padding:15px 110px;
+    border:none;
+  }
+  .features__item-wrapper {
+    justify-content:space-between;
+  }
+  .features__item {
+    width:200px;
+    height:230px;
+  }
+}

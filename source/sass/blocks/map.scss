@@ -25,3 +25,53 @@
   height:365px;
   background:url('../img/moscow-city-map.jpg') no-repeat;
 }
+@media all and (min-width: 768px) {
+  .map {
+    padding:0;
+    margin:0;
+  }
+  .map__wrapper {
+    padding:65px;
+    justify-content:space-between;
+    align-items:flex-start;
+  }
+  .map__yandex {
+    height:395px;
+  }
+  .map__text {
+    width:170px;
+    font-size:20px;
+    line-height:25px;
+    padding:0;
+  }
+  .map__address {
+    text-align:right;
+    width:170px;
+    font-size:16px;
+    line-height:20px;
+    padding:0;
+  }
+  .map__text-city {
+    display:block;
+    padding-top:20px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .map {
+    position:relative;
+  }
+  .map__yandex {
+    height:400px;
+  }
+  .map__wrapper {
+    position:absolute;
+    top:100px;
+    left:110px;
+    background-color:$color-white;
+    padding-left:80px;
+    padding-right:80px;
+  }
+  .map__text {
+    margin-right:50px;
+  }
+}

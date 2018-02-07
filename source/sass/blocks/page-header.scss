@@ -42,3 +42,49 @@
   text-decoration:none;
   padding-top:17px;
 }
+@media all and (min-width: 768px) {
+  .page-header {
+    display:flex;
+    justify-content:space-between;
+  }
+  .page-header__wrapper {
+    border:none;
+  }
+  .page-header__menu-burger {
+    display:none;
+  }
+  .page-header__menu-wrapper {
+    flex-direction:row;
+  }
+  .page-header__menu-item {
+    margin-right:30px;
+    border:none;
+  }
+  .page-header__menu-link {
+    font-size:18px;
+    line-height:24px;
+    font-weight:normal;
+    color:#222222;
+  }
+  .page-header__logo-text {
+    margin-left:20px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .page-header {
+    position:absolute;
+    z-index:2;
+    width:100%;
+    top:60px;
+    box-sizing:border-box;
+    padding:0 90px;
+  }
+  .page-header__menu-link {
+    font-size:20px;
+    line-height:25px;
+    color:$color-white;
+  }
+  .page-header__menu-link_color {
+    color:$color-black;
+  }
+}

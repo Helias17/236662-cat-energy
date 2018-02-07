@@ -21,3 +21,29 @@
   color:$color-white;
   padding:40px 0 30px 0;
 }
+@media all and (min-width: 768px) {
+  .promo-ad {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    max-width:none;
+    height:260px;
+    background-size:100% auto;
+    background-position:left center;
+    border:30px solid #ffffff;
+    margin-bottom:50px;
+  }
+  .promo-ad__gift {
+    margin:0;
+  }
+  .promo-ad__text {
+    text-align:left;
+  }
+}
+@media all and (min-width: 1200px) {
+  .promo-ad {
+    width:245px;
+    height:290px;
+    border:0;
+  }
+}
