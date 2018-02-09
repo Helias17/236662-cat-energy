@@ -12,17 +12,17 @@
   line-height:20px;
   color:$color-111111;
   text-transform:uppercase;
-  padding:30px 10px 30px 20px;
+  padding:27px 10px 27px 20px;
 }
 .map__address {
   font-size:14px;
   line-height:20px;
   font-family:Arial;
   color:$color-text;
-  padding:30px 20px 30px 10px;
+  padding:27px 20px 27px 10px;
 }
 .map__yandex {
-  height:365px;
+  height:362px;
   background:url('../img/moscow-city-map.jpg') no-repeat;
 }
 @media all and (min-width: 768px) {
@@ -31,7 +31,7 @@
     margin:0;
   }
   .map__wrapper {
-    padding:65px;
+    padding:65px 70px 60px 70px;
     justify-content:space-between;
     align-items:flex-start;
   }
@@ -42,6 +42,11 @@
     width:170px;
     font-size:20px;
     line-height:25px;
+    padding:0;
+  }
+  .map__text-wrap {
+    display:inline-block;
+    margin:0;
     padding:0;
   }
   .map__address {

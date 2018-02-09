@@ -8,9 +8,14 @@
   border-bottom:1px solid $color-d9d9d9;
 }
 .page-footer__vk-icon, .page-footer__insta-icon, .page-footer__fb-icon {
-  margin-right:38px;
+  margin-right:25px;
+  margin-left:13px;
   opacity:0.7;
   vertical-align:middle;
+}
+.page-footer__vk-icon {
+  width:20px;
+  height:20px;
 }
 .page-footer__copyrights {
   display:flex;
@@ -32,7 +37,7 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:40px 30px;
+    padding:60px 30px;
 
   }
   .page-footer__logo-text, .page-footer__socials {
@@ -40,22 +45,26 @@
     border:none;
     padding:0;
   }
+  .page-footer__socials {
+    padding-left:50px;
+    margin-top:-10px;
+  }
   .page-footer__vk-icon, .page-footer__insta-icon {
     width:30px;
     height:30px;
-    margin-right:38px;
+    margin-right:5px;
   }
   .page-footer__insta-icon {
     width:23px;
     height:23px;
-    margin-right:38px;
+    margin-right:5px;
   }
   .page-footer__fb-icon {
     width:30px;
     height:30px;
   }
   .page-footer__text-link {
-    margin-right:25px;
+    margin-right:20px;
   }
   .page-footer__copyrights {
     padding:0;
