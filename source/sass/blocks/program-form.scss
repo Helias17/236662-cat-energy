@@ -43,7 +43,8 @@
 }
 .program-form__email, .program-form__phone {
   position:absolute;
-  right:20px;
+  right:15px;
+  top:37%;
 }
 .program-form__label {
   margin:0 0 0 25px;
@@ -122,7 +123,6 @@
     width:47%;
     padding-left:15px;
     margin-bottom:40px;
-    
   }
   .program-form__input {
     height:50px;
@@ -202,6 +202,9 @@
     height:55px;
     flex-grow:1;
   }
+  .program-form__email, .program-form__phone {
+    right:20px;
+  }
   .program-form__row_target {
     margin-bottom:0;
     height:52px;
@@ -233,7 +236,7 @@
   .program-form__send-claim-button {
     width:570px;
     //margin-top:50px;
-    margin-bottom:80px;
+    margin-bottom:85px;
     margin-right:80px;
   }
   .program-form__wrapper-2_button {

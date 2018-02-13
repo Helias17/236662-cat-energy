@@ -38,7 +38,6 @@
     left:-35px;
     top:-5px;
     margin:0;
-    
   }
   .promo-ad__text {
     position:relative;
@@ -52,9 +51,10 @@
     flex-direction:column;
     width:245px;
     height:auto;
-    border:0;
+    border-width:0;
     margin:0;
-    //box-sizing:border-box;
+    //box-sizing:content-box;
+    flex-grow:0;
   }
   .promo-ad__gift {
     position:static;
@@ -62,7 +62,7 @@
     margin:0;
   }
   .promo-ad__text {
-    position:static;  
+    position:static;
     text-align:center;
     padding:10px 0 0 0;
     margin:0;

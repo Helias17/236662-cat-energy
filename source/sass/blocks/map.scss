@@ -77,11 +77,16 @@
     position:absolute;
     top:100px;
     left:110px;
+    z-index:5;
     background-color:$color-white;
-    padding-left:80px;
+    padding-left:75px;
     padding-right:80px;
+    padding-top:60px;
   }
   .map__text {
-    margin-right:50px;
+    margin-right:80px;
+  }
+  .map__address {
+    text-align:left;
   }
 }
