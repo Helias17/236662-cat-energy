@@ -71,26 +71,32 @@
   .promo-wrapper {
     display:flex;
     justify-content:space-between;
-    padding:50px 110px;
+    padding:65px 110px 90px;
   }
   .promo__title {
     width:430px;
+    margin-top:90px;
   }
   .promo {
     position:relative;
-    height:680px;
+    height:705px;
     box-sizing:border-box;
-    background:url('../img/index-background-mobile@1x.jpg')  no-repeat right top;
-    background-size:680px auto;
-    padding-top:145px;
-    margin-left:170px;
+    background: url('../img/index-background-mobile@1x.jpg') right top no-repeat ;
+    background-size:680px 705px;
+    padding-top:140px;
+    margin-left:190px;
     padding-left:0;
+    margin-top:0;
   }
   .promo__image {
     position:absolute;
-    top:150px;
-    left:350px;
+    top:140px;
+    left:370px;
     width:552px;
     height:499px;
+  }
+  .promo__link {
+    margin-top:50px;
+    margin-left:0;
   }
 }

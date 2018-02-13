@@ -12,18 +12,23 @@
   line-height:20px;
   color:$color-111111;
   text-transform:uppercase;
-  padding:27px 10px 27px 20px;
+  padding:27px 5px 27px 20px;
 }
 .map__address {
   font-size:14px;
   line-height:20px;
   font-family:Arial;
   color:$color-text;
-  padding:27px 20px 27px 10px;
+  padding:27px 10px 27px 10px;
 }
 .map__yandex {
   height:362px;
   background:url('../img/moscow-city-map.jpg') no-repeat;
+}
+.map__text-wrap {
+  display:inline-block;
+  margin:0;
+  padding:0;
 }
 @media all and (min-width: 768px) {
   .map {

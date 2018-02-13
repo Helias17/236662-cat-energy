@@ -6,7 +6,7 @@
   background-clip:content-box;
   box-sizing:border-box;
   border:20px solid #ffffff;
-  margin:0 auto;
+  margin:0 auto 15px;
   text-align:center;
 }
 .promo-ad__gift {
@@ -31,19 +31,40 @@
     background-size:100% auto;
     background-position:left center;
     border:30px solid #ffffff;
-    margin-bottom:50px;
+    margin-bottom:45px;
   }
   .promo-ad__gift {
+    position:relative;
+    left:-35px;
+    top:-5px;
     margin:0;
+    
   }
   .promo-ad__text {
+    position:relative;
+    left:-5px;
+    top:-5px;
     text-align:left;
   }
 }
 @media all and (min-width: 1200px) {
   .promo-ad {
+    flex-direction:column;
     width:245px;
-    height:290px;
+    height:auto;
     border:0;
+    margin:0;
+    //box-sizing:border-box;
+  }
+  .promo-ad__gift {
+    position:static;
+    padding-top:60px;
+    margin:0;
+  }
+  .promo-ad__text {
+    position:static;  
+    text-align:center;
+    padding:10px 0 0 0;
+    margin:0;
   }
 }

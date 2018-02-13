@@ -4,12 +4,14 @@
 }
 .example__title {
   @include title-text;
+  margin-bottom:25px;
 }
 .example__desc {
   font-size:14px;
   line-height:18px;
   font-family:Arial;
   margin-bottom:0;
+  margin-top:0;
 }
 .example__wrapper {
   display:flex;
@@ -56,11 +58,14 @@
   font-size:14px;
   text-transform:uppercase;
   text-align:center;
+  margin-top:20px;
   margin-bottom:30px;
   color:#111111;
 }
 .example__image-wrapper {
   text-align:center;
+  height:245px;
+  background:url("../img/before-mobile@1x.png") -20px 5px no-repeat;
 }
 .example__image {
   margin-left:-20px;
@@ -94,7 +99,7 @@
 @media all and (min-width: 768px) {
   .example {
     background-color:$color-white;
-    padding:30px 0 0 0;
+    padding:17px 0 0 0;
   }
   .example__wrapper {
   justify-content:flex-start;
@@ -204,32 +209,39 @@
   }
 }
 @media all and (min-width: 1200px) {
+  .example {
+    padding-top:40px;
+  }
   .example__image-wrapper {
     margin:0;
+    background-position:30px 60px,left 230px;
+  }
+  .example__image-wrapper-after {
+    background-position:-275px 45px, left 230px;
   }
   .example__title {
     margin-left:110px;
   }
   .example__desc {
     width:440px;
-    //margin-top:75px;
-    //margin-bottom:60px;
-    margin:0;
-    margin-right:10px
+    margin-top:75px;
+    margin-bottom:40px;
   }
   .example__wrapper-3 {
+    position:relative;
     display:flex;
     vertical-align:top;
     flex-direction:row;
     justify-content:stretch;
-    //padding:0 110px;
+    margin-top:60px;
     background-color:#f2f2f2;
   }
   .example__wrapper-4 {
-    //width:50%;
-    border:1px solid red;
+    position:absolute;
+    right:0px;
+    top:-230px;
+    width:790px;
     flex-grow:1;
-    background-color:$color-white;
   }
   .example__image-wrapper-main {
     display:flex;
@@ -241,7 +253,6 @@
   .example__wrapper-2 {
     padding:0;
     flex-grow:1;
-    border:1px solid green;
     padding-left:110px;
   }
   .example__image {
@@ -255,11 +266,13 @@
     width:auto;
     text-align:left;
     padding-top:35px;
+    padding-bottom:35px;
   }
   .example__price {
     padding-left:60px;
   }
-  .example__progressbar {
-    width:250px;
+  .example__progressbar-wrapper {
+    padding-bottom:65px;
+    left:14%;
   }
 }
