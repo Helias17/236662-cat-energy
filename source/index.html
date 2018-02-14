@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=device-dpi">
   </head>
   <body>
   <header class="page-header">
@@ -20,7 +21,7 @@
     </div>
     <nav class="page-header__menu-wrapper">
       <div class="page-header__menu-item">
-      <a href="index.html" class="page-header__menu-link">Главная</a>
+      <span href="index.html" class="page-header__menu-link page-header__menu-link_active-white">Главная</span>
       </div>
       <div class="page-header__menu-item">
       <a href="catalog.html" class="page-header__menu-link">Каталог продукции</a>
@@ -43,7 +44,7 @@
     </div>
     <div class="program-wrapper">
       <div class="program">
-        <img src="img/icon-cat-slim.svg"   width="50" height="50" alt="" class="program__logo">
+        <div class="program__logo"></div>
         <p class="program__title">
         Похудение
         </p>
@@ -53,12 +54,12 @@
         <a href="" class="program__link">Каталог Slim</a>
       </div>
       <div class="program">
-        <img src="img/icon-cat-pro.svg" class="program__logo program__logo_mass"  width="50" height="50" alt="">
+        <div class="program__logo program__logo_mass"></div>
         <p class="program__title">
         Набор массы
         </p>
         <p class="program__desc">
-        Заработать авторитет среди дворовых котов и даже собак?<br>Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+        Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
         </p>
         <a href="" class="program__link">Каталог Pro</a>
       </div>
@@ -69,13 +70,13 @@
       </h2>
       <div class="features__item-wrapper">
         <figure class="features__item">
-          <img src="img/advantage-powder@1x.png" class="features__logo-1"  width="50" height="50" alt="">
+          <img src="img/advantage-leaf@1x.png" class="features__logo-1"  width="50" height="50" alt="">
           <div class="features__desc">
           Функциональное питание содержит только полезные питательные вещества.
           </div>
         </figure>
         <figure class="features__item">
-          <img src="img/advantage-leaf@1x.png" class="features__logo-2"  width="50" height="50" alt="">
+          <img src="img/advantage-powder@1x.png" class="features__logo-2"  width="50" height="50" alt="">
           <div class="features__desc">
           Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </div>
@@ -128,8 +129,13 @@
           </div>
         </div>
         <div class="example__wrapper-4">
-          <div class="example__image-wrapper">
-            <img src="img/before-mobile@1x.png" width="320" height="240" alt="" class="example__image">
+          <div class="example__image-wrapper-main">
+            <div class="example__image-wrapper">
+              <!-- <img src="img/before-mobile@1x.png" width="320" height="240" border="0" alt="" class="example__image"> -->
+            </div>
+            <div class="example__image-wrapper-after">
+              <!-- <img src="img/after-desktopboris.png" width="320" height="240" border="0" alt="" class="example__image-after"> -->
+            </div>
           </div>
           <div class="example__progressbar-wrapper">
             <p class="example__progressbar-text">
@@ -149,14 +155,14 @@
     <div class="map">
       <div class="map__wrapper">
         <div class="map__text">
-        Приглашаем к сотрудничеству дилеров!
+        Приглашаем <span class="map__text-wrap">к сотрудничеству</span> дилеров!
         </div>
         <div class="map__address">
         ул. Большая Конюшенная, д. 19/8 <span class="map__text-city">Санкт-Петербург</span>
         </div>
       </div>
       <div class="map__yandex">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0a8120e9b0a4e05892055985d48d0f79cf37f03d36669d750658070c6d336dcd&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0a8120e9b0a4e05892055985d48d0f79cf37f03d36669d750658070c6d336dcd&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
     </div>
   </main>
@@ -165,9 +171,9 @@
       <a href="" class="page-footer__link-logo"><img src="img/logo-mobile-header.svg"  width="130" height="25" alt=""  class="page-footer__logo-text-img"></a>
     </div>
     <div class="page-footer__socials">
-      <a href="" class="page-footer__link-socials"><img src="img/icon-vk-mobile.svg" class="page-footer__vk-icon"  width="16" height="16" alt=""></a>
+      <a href="" class="page-footer__link-socials"><img src="img/icon-vk-mobile.svg" class="page-footer__vk-icon"  width="22" height="22" alt=""></a>
       <a href="" class="page-footer__link-socials"><img src="img/icon-insta-mobile.svg" class="page-footer__insta-icon"  width="16" height="16" alt=""></a>
-      <a href="" class="page-footer__link-socials"><img src="img/icon-fb-mobile.svg" class="page-footer__fb-icon"  width="16" height="16" alt=""></a>
+      <a href="" class="page-footer__link-socials"><img src="img/icon-fb-mobile.svg" class="page-footer__fb-icon"  width="20" height="20" alt=""></a>
     </div>
     <div class="page-footer__copyrights">
       <div class="page-footer__text">

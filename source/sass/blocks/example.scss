@@ -1,15 +1,17 @@
 .example {
   background-color:$color-grey;
-  padding:20px;
+  padding:20px 20px 18px 20px;
 }
 .example__title {
   @include title-text;
+  margin-bottom:25px;
 }
 .example__desc {
   font-size:14px;
   line-height:18px;
   font-family:Arial;
   margin-bottom:0;
+  margin-top:0;
 }
 .example__wrapper {
   display:flex;
@@ -17,6 +19,9 @@
   margin-bottom:0;
   margin-top:5px;
   color:$color-text;
+}
+.example__image-wrapper-after {
+  display:none;
 }
 .example__item-wrapper {
   display:flex;
@@ -53,17 +58,24 @@
   font-size:14px;
   text-transform:uppercase;
   text-align:center;
+  margin-top:20px;
   margin-bottom:30px;
   color:#111111;
 }
 .example__image-wrapper {
   text-align:center;
+  height:245px;
+  background:url("../img/before-mobile@1x.png") -20px 5px no-repeat;
+}
+.example__image {
+  margin-left:-20px;
 }
 .example__progressbar-wrapper {
   display:flex;
   justify-content:center;
   align-items:center;
-  padding-top:25px;
+  padding-top:30px;
+  padding-bottom:15px;
 }
 .example__progressbar-text {
   font-size:16px;
@@ -87,9 +99,7 @@
 @media all and (min-width: 768px) {
   .example {
     background-color:$color-white;
-    padding-left:0;
-    padding-right:0;
-    padding-bottom:0;
+    padding:17px 0 0 0;
   }
   .example__wrapper {
   justify-content:flex-start;
@@ -130,6 +140,7 @@
   text-transform:uppercase;
   }
   .example__item-desc {
+  width:auto;
   font-size:14px;
   line-height:14px;
   margin-top:-10px;
@@ -140,23 +151,44 @@
     font-size:20px;
     width:180px;
     text-align:right;
-    padding-top:20px;
+    padding-top:10px;
+  }
+  .example__wrapper-4 {
+    position:relative;
+  }
+  .example__image-wrapper-main {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:stretch;
+    //border:1px solid blue;
   }
   .example__image-wrapper {
-    position:relative;
-    height:340px;
-    background-color:#f2f2f2;
-    margin-top:230px;
+    display:flex;
+    height:690px;
+    background:url("../img/before-desktopboris.png") 45px 80px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+    flex-grow:1;
+  }
+  .example__image-wrapper-after {
+    display:flex;
+    background:url("../img/after-desktopboris.png") -245px 60px no-repeat, url("../img/bg_grey_after.png") left 230px repeat-x;
+    flex-grow:1;
   }
   .example__image {
-    position:absolute;
-    top:-180px;
-    left:120px;
     width:666px;
     height:500px;
+    border:1px solid green;
+  }
+  .example__image-after {
+    width:666px;
+    height:500px;
+    border:1px solid green;
   }
   .example__progressbar-wrapper {
-    background-color:#f2f2f2;
+    position:absolute;
+    bottom:0;
+    left:13%;
+    background-color:none;
     padding-bottom:70px;
   }
   .example__progressbar-text {
@@ -177,26 +209,51 @@
   }
 }
 @media all and (min-width: 1200px) {
+  .example {
+    padding-top:40px;
+  }
   .example__image-wrapper {
     margin:0;
+    background-position:30px 60px,left 230px;
+  }
+  .example__image-wrapper-after {
+    background-position:-275px 45px, left 230px;
   }
   .example__title {
     margin-left:110px;
   }
   .example__desc {
-    margin-top:75px;
-    margin-bottom:60px;
+    width:440px;
+    margin-top:70px;
+    margin-bottom:45px;
   }
   .example__wrapper-3 {
+    position:relative;
     display:flex;
-    padding:0 110px;
+    vertical-align:top;
+    flex-direction:row;
+    justify-content:stretch;
+    margin-top:60px;
     background-color:#f2f2f2;
+  }
+  .example__wrapper-4 {
+    position:absolute;
+    right:0px;
+    top:-230px;
+    width:790px;
+    flex-grow:1;
+  }
+  .example__image-wrapper-main {
+    display:flex;
+    flex-direction:row;
   }
   .example__wrapper-1 {
     flex-direction:column;
   }
   .example__wrapper-2 {
     padding:0;
+    flex-grow:1;
+    padding-left:110px;
   }
   .example__image {
     top:-170px;
@@ -208,9 +265,15 @@
   .example__text {
     width:auto;
     text-align:left;
-    padding-top:35px;
+    padding-top:30px;
+    padding-bottom:35px;
+  margin-bottom:35px;
   }
   .example__price {
     padding-left:60px;
+  }
+  .example__progressbar-wrapper {
+    padding-bottom:65px;
+    left:14%;
   }
 }

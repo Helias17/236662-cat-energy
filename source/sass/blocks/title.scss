@@ -9,36 +9,50 @@
   font-family: Oswald;
   font-weight:normal;
   font-size:24px;
+  line-height:24px;
   color:#111111;
   margin:20px 0px 10px 20px;
+}
+.title-h2_form {
+  margin-top:30px;
+}
+.title-h2__wrap {
+  display:block;
+  margin:0;
+  padding:0;
 }
 
 @media all and (min-width: 768px) {
   .title-catalog {
     font-size:60px;
     margin-left:30px;
-    margin-bottom:90px;
-    margin-top:35px;
+    margin-bottom:120px;
+    margin-top:25px;
   }
   .title-h2 {
     font-size:36px;
-    margin-left:30px;
+    margin-left:65px;
   }
   .title-h2_form {
-    margin-left:60px;
+    margin-left:70px;
     margin-bottom:60px;
+  }
+  .title-h2__wrap {
+    display:inline;
   }
 }
 @media all and (min-width: 1200px) {
   .title-catalog {
     margin-top:180px;
     margin-left:110px;
+    margin-bottom:155px;
   }
   .title-h2 {
     margin-left:110px;
+    margin-top:60px;
   }
   .title-h2_form {
-    margin-top:60px;
+    margin-top:65px;
     margin-bottom:40px;
   }
 }

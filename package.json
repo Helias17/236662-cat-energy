@@ -36,5 +36,9 @@
   ],
   "engines": {
     "node": "8.9"
+  },
+  "dependencies": {
+    "chrome": "^0.1.0",
+    "set-default-browser": "^1.0.1"
   }
 }

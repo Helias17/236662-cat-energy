@@ -3,12 +3,16 @@
   padding:20px;
 }
 .page-footer__logo-text, .page-footer__socials {
-  padding:20px 0 20px 0;
+  padding:20px 0 24px 0;
   text-align:center;
   border-bottom:1px solid $color-d9d9d9;
 }
+.page-footer__socials {
+    padding:20px 0 17px 10px;
+}
 .page-footer__vk-icon, .page-footer__insta-icon, .page-footer__fb-icon {
-  margin-right:38px;
+  margin-right:25px;
+  margin-left:10px;
   opacity:0.7;
   vertical-align:middle;
 }
@@ -31,38 +35,73 @@
   .page-footer {
     display:flex;
     justify-content:space-between;
-    align-items:center;
-    padding:40px 30px;
-
+    align-items:flex-start;
+    height:150px;
+    padding:0 30px;
+    box-sizing:border-box;
   }
-  .page-footer__logo-text, .page-footer__socials {
-    text-align:center;
+  .page-footer__logo-text {
     border:none;
     padding:0;
+    margin-top:62px;
   }
-  .page-footer__vk-icon, .page-footer__insta-icon {
+  .page-footer__socials {
+    display:flex;
+    justify-content:space-between;
+    width:127px;
+    margin-top:60px;
+    margin-left:27px;
+    padding:0;
+    box-sizing:padding-box;
+    border:none;
+  }
+  .page-footer__vk-icon, .page-footer__insta-icon, .page-footer__fb-icon {
     width:30px;
     height:30px;
-    margin-right:38px;
+    margin:0;
+    padding:0;
   }
   .page-footer__insta-icon {
     width:23px;
     height:23px;
-    margin-right:38px;
   }
   .page-footer__fb-icon {
-    width:30px;
-    height:30px;
+    width:26px;
+    height:26px;
   }
   .page-footer__text-link {
-    margin-right:25px;
+    margin-right:20px;
   }
   .page-footer__copyrights {
     padding:0;
+    margin-top:60px;
+  }
+  .page-footer__image-item {
+    margin-top:5px;
   }
 }
 @media all and (min-width: 1200px) {
   .page-footer {
-    padding:60px 110px;
+    padding:0px 110px;
+    box-sizing:border-box;
+  }
+  .page-footer__socials {
+    display:flex;
+    justify-content:space-between;
+    width:130px;
+    margin-left:25px;
+    padding:0;
+    box-sizing:padding-box;
+  }
+  .page-footer__vk-icon, .page-footer__insta-icon, .page-footer__fb-icon {
+  margin:0;
+  padding:0;
+  }
+  .page-footer__fb-icon {
+    width:27px;
+    height:27px;
+  }
+  .page-footer__copyrights {
+    margin-top:52px;
   }
 }

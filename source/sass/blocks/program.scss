@@ -1,40 +1,69 @@
 .program {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
   background-color:$color-grey;
-  margin:20px 20px 0 20px;
-  padding:20px;
+  margin:22px 20px 0 20px;
+  padding:22px 20px 23px 20px;
 }
 .program__logo {
-  float:left;
-  margin:0 10px 0 0;
+  height:50px;
+  width:70px;
+  background:url("../img/icon-cat-slim.svg") no-repeat, url("../img/elipse-green.svg") no-repeat;
+  background-size:100% 100%;
+  background-position:-10px 0px,-10px 0px;
 }
+  .program__logo_mass {
+    position:relative;
+    left:-10px;
+    top:3px;
+    background:url("../img/icon-cat-pro.svg") no-repeat, url("../img/elipse-green.svg") no-repeat;
+    background-size:100% 100%;
+  }
 .program__title {
   font-size:24px;
+  line-height:37px;
   color:#111111;
-  margin:0px;
   text-transform:uppercase;
+  margin:0;
 }
 .program__desc {
-  clear:both;
   font-size:14px;
   line-height:18px;
   font-family:Arial;
   color:$color-text;
-  padding:20px 0 20px 0;
+  padding:10px 0 20px 0;
   border-bottom:1px solid #d9d9d9;
 }
 .program__link {
   text-transform:uppercase;
   font-size:16px;
+  line-height:16px;
   color:#111111;
   text-decoration:none;
+  padding-top:5px;
 }
 @media all and (min-width: 768px) {
   .program {
+    display:block;
     margin:30px;
-    padding:80px 50px 60px 50px;
+    padding:75px 50px 60px 50px;
   }
   .program__logo {
+    position:relative;
+    left:30px;
     float:right;
+    height:195px;
+    width:268px;
+    background-position:-10px -15px,-8px -1px;
+    background-origin:content-box;
+    padding-top:20px;
+  }
+  .program__logo_mass {
+    height:200px;
+    width:268px;
+    left:25px;
+    background-position:0px -10px,0px -10px;
   }
   .program__title {
     font-size:36px;
@@ -43,7 +72,8 @@
     font-size:16px;
     line-height:24px;
     border:none;
-    padding:0 0 40px 0;
+    padding:10px 0 39px 0;
+    width:55%;
   }
   .program__link {
     font-size:20px;
@@ -52,10 +82,37 @@
 @media all and (min-width: 1200px) {
   .program-wrapper {
     display:flex;
-    margin:0 70px;
+    justify-content:space-between;
+    padding:80px 110px 45px;;
   }
   .program {
-    margin:40px;
-    padding:40px 50px 60px 50px;
+    display:flex;
+    flex-wrap:wrap;
+    width:570px;
+    padding:30px 53px 60px 53px;
+    box-sizing:border-box;
+    margin:0;
   }
+  .program__logo {
+    position:relative;
+    left:-10px;
+    float:none;
+    height:100px;
+    width:134px;
+    background-position:-5px -10px,-5px -5px;
+  }
+  .program__logo_mass {
+    left:-20px;
+    background-position:0px -10px,5px -5px;
+  }
+  .program__title {
+    padding-left:25px;
+    padding-top:5px;
+  }
+  .program__desc {
+    width:auto;
+    padding-top:20px;
+    padding-bottom:15px;
+  }
+
 }

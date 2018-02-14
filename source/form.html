@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=device-dpi">
   </head>
   <body>
   <header class="page-header">
@@ -26,7 +27,7 @@
       <a href="catalog.html" class="page-header__menu-link page-header__menu-link_color">Каталог продукции</a>
       </div>
       <div class="page-header__menu-item">
-      <a href="form.html" class="page-header__menu-link  page-header__menu-link_color">Подбор программы</a>
+      <span class="page-header__menu-link  page-header__menu-link_color page-header__menu-link_active-black">Подбор программы</span>
       </div>
     </nav>
   </header>
@@ -44,28 +45,28 @@
                   <input type="text" value="Барсик" name="name" id="username" class="program-form__input">
               </div>
               <div class="program-form__row">
-                  <label class="program-form__label-input" for="weight">Вес(кг):*</label>
+                  <label class="program-form__label-input" for="weight">Вес (кг):*</label>
                   <input type="text" value="" name="weight" id="weight" class="program-form__input">
               </div>
               <div class="program-form__row">
-                  <label class="program-form__label-input" for="age">Возраст(лет):</label>
+                  <label class="program-form__label-input" for="age">Возраст (лет):</label>
                   <input type="text" value="" name="age" id="age" class="program-form__input">
               </div>
         </div>
         <div class="program-form__wrapper program-form__wrapper_checkboxes">
-          <div class="program-form__row">
+          <div class="program-form__row program-form__row_target">
             <input type="radio"  name="program-type"  value="slimming" id="slimming"><label for="slimming" class="program-form__label">Похудение</label>
           </div>
-          <div class="program-form__row">
+          <div class="program-form__row  program-form__row_target">
             <input type="radio"  name="program-type" value="mass" id="mass"><label for="mass" class="program-form__label">Набор массы</label>
           </div>
-          <div class="program-form__row">
+          <div class="program-form__row  program-form__row_target">
             <input type="radio"  name="program-type" value="unknown" id="unknown"><label for="unknown" class="program-form__label">Не знаю (нужен ваш совет)</label>
           </div>
         </div>
       </div>
-      <h2 class="title-h2 title-h2_form">Контактные данные (владельца кота)</h2>
-      <div class="program-form__wrapper program-form__wrapper_desktop">
+      <h2 class="title-h2 title-h2_form"><span class="title-h2__wrap">Контактные данные</span> (владельца кота)</h2>
+      <div class="program-form__wrapper-2 program-form__wrapper_desktop">
         <div class="program-form__row program-form__row_desktop">
             <label class="program-form__label-input">E-mail:*</label>
             <input type="email" value=""  name="email"  class="program-form__input">
@@ -73,16 +74,16 @@
         </div>
         <div class="program-form__row">
             <label class="program-form__label-input">Телефон:*</label>
-            <input type="phone" value="" name="phone"  class="program-form__input">
+            <input type="tel" value="" name="phone"  class="program-form__input">
             <img src="img/icon-phone.svg" width="20" height="20" alt=""  class="program-form__phone">
         </div>
       </div>
       <h2 class="title-h2 title-h2_form">Комментарий</h2>
       <div class="program-form__wrapper-2">
-        <textarea placeholder="Расскажите о повадках вашего кота" class="program-form__textarea" name="comment" rows="5" value=""></textarea>
+        <textarea placeholder="Расскажите обо всех повадках вашего кота" class="program-form__textarea" name="comment"></textarea>
       </div>
       <h2 class="title-h2 title-h2_form">Дополнительно</h2>
-      <div class="program-form__wrapper-2">
+      <div class="program-form__wrapper-2 program-form__wrapper-2_products">
         <div class="program-form__row program-form__row_products">
           <input type="checkbox" checked  name="sugar" id="sugar"><label for="sugar" class="program-form__label">Сахарозаменитель</label>
         </div>
@@ -96,10 +97,10 @@
           <input type="checkbox"  name="vitamins" id="vitamins"><label for="vitamins" class="program-form__label">Витамины</label>
         </div>
       </div>
-      <div class="program-form__wrapper-2">
+      <div class="program-form__wrapper-2 program-form__wrapper-2_button">
         <button type="submit" class="program-form__send-claim-button">Отправить заявку</button>
         <p class="program-form__note-text">
-        * - Обязательные поля
+        * — Обязательные поля
         </p>
       </div>
     </form>
@@ -107,14 +108,14 @@
     <div class="map map_bg">
       <div class="map__wrapper">
         <div class="map__text">
-        Приглашаем к сотрудничеству дилеров!
+        Приглашаем <span class="map__text-wrap">к сотрудничеству</span> дилеров!
         </div>
         <div class="map__address">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        ул. Большая Конюшенная, д. 19/8 <span class="map__text-city">Санкт-Петербург</span>
         </div>
       </div>
       <div class="map__yandex">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0a8120e9b0a4e05892055985d48d0f79cf37f03d36669d750658070c6d336dcd&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        <script  charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0a8120e9b0a4e05892055985d48d0f79cf37f03d36669d750658070c6d336dcd&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
     </div>
   </main>
@@ -123,9 +124,9 @@
       <a href="" class="page-footer__link-logo"><img src="img/logo-mobile-header.svg"  width="130" height="25" alt=""  class="page-footer__logo-text-img"></a>
     </div>
     <div class="page-footer__socials">
-      <a href="" class="page-footer__link-socials"><img src="img/icon-vk-mobile.svg" class="page-footer__vk-icon"  width="16" height="16" alt=""></a>
+      <a href="" class="page-footer__link-socials"><img src="img/icon-vk-mobile.svg" class="page-footer__vk-icon"  width="22" height="22" alt=""></a>
       <a href="" class="page-footer__link-socials"><img src="img/icon-insta-mobile.svg" class="page-footer__insta-icon"  width="16" height="16" alt=""></a>
-      <a href="" class="page-footer__link-socials"><img src="img/icon-fb-mobile.svg" class="page-footer__fb-icon"  width="16" height="16" alt=""></a>
+      <a href="" class="page-footer__link-socials"><img src="img/icon-fb-mobile.svg" class="page-footer__fb-icon"  width="20" height="20" alt=""></a>
     </div>
     <div class="page-footer__copyrights">
       <div class="page-footer__text">
