@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=device-dpi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, target-densitydpi=device-dpi">
   </head>
   <body>
   <header class="page-header">
@@ -21,7 +21,7 @@
     </div>
     <nav class="page-header__menu-wrapper">
       <div class="page-header__menu-item">
-      <span href="index.html" class="page-header__menu-link page-header__menu-link_active-white">Главная</span>
+      <span class="page-header__menu-link page-header__menu-link_active-white">Главная</span>
       </div>
       <div class="page-header__menu-item">
       <a href="catalog.html" class="page-header__menu-link">Каталог продукции</a>
@@ -39,7 +39,11 @@
       <p class="promo__desc">
       Занялся собой? Займись котом!
       </p>
-      <img src="img/index-can-mobile@1x.png" class="promo__image" width="280" height="271" alt="">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+        <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+        <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"  class="promo__image" width="280" height="271" alt="">
+      </picture>
       <a href="form.html" class="promo__link">Подобрать программу</a>
     </div>
     <div class="program-wrapper">
@@ -70,7 +74,7 @@
       </h2>
       <div class="features__item-wrapper">
         <figure class="features__item">
-          <img src="img/advantage-leaf@1x.png" class="features__logo-1"  width="50" height="50" alt="">
+          <img src="img/advantage-leaf@1x.png" width="50" height="50" alt="" class="features__logo-1">
           <div class="features__desc">
           Функциональное питание содержит только полезные питательные вещества.
           </div>

@@ -7,18 +7,19 @@
   padding:22px 20px 23px 20px;
 }
 .program__logo {
-  height:50px;
+  height:55px;
   width:70px;
   background:url("../img/icon-cat-slim.svg") no-repeat, url("../img/elipse-green.svg") no-repeat;
-  background-size:100% 100%;
-  background-position:-10px 0px,-10px 0px;
+  background-size:50px 50px, 50px 50px;
+  background-position:0px 0px,0px 2px;
 }
   .program__logo_mass {
     position:relative;
     left:-10px;
     top:3px;
     background:url("../img/icon-cat-pro.svg") no-repeat, url("../img/elipse-green.svg") no-repeat;
-    background-size:100% 100%;
+    background-size:70px 50px, 50px 50px;
+    background-position:0px -2px,12px 0px;
   }
 .program__title {
   font-size:24px;
@@ -32,7 +33,7 @@
   line-height:18px;
   font-family:Arial;
   color:$color-text;
-  padding:10px 0 20px 0;
+  padding:5px 0 20px 0;
   border-bottom:1px solid #d9d9d9;
 }
 .program__link {
@@ -53,17 +54,17 @@
     position:relative;
     left:30px;
     float:right;
-    height:195px;
+    height:250px;
     width:268px;
-    background-position:-10px -15px,-8px -1px;
-    background-origin:content-box;
-    padding-top:20px;
+    background-size:268px 195px, 199px 199px;
+    background-position:-5px 3px,28px 18px;
   }
   .program__logo_mass {
-    height:200px;
+    height:250px;
     width:268px;
     left:25px;
-    background-position:0px -10px,0px -10px;
+    background-size:268px 195px, 199px 199px;
+    background-position:0px 15px,35px 12px;
   }
   .program__title {
     font-size:36px;
@@ -89,7 +90,7 @@
     display:flex;
     flex-wrap:wrap;
     width:570px;
-    padding:30px 53px 60px 53px;
+    padding:37px 53px 60px 53px;
     box-sizing:border-box;
     margin:0;
   }
@@ -97,13 +98,15 @@
     position:relative;
     left:-10px;
     float:none;
-    height:100px;
+    height:110px;
     width:134px;
-    background-position:-5px -10px,-5px -5px;
+    background-size:134px 100px, 100px 100px;
+    background-position:-10px 3px,10px 10px;
   }
   .program__logo_mass {
     left:-20px;
-    background-position:0px -10px,5px -5px;
+    background-size:134px 100px, 100px 100px;
+    background-position:0px 8px,20px 8px;
   }
   .program__title {
     padding-left:25px;
@@ -111,8 +114,10 @@
   }
   .program__desc {
     width:auto;
-    padding-top:20px;
-    padding-bottom:15px;
+    padding-top:25px;
+    padding-bottom:12px;
   }
-
+  .program__link {
+    width:100%;
+  }
 }
