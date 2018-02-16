@@ -23,7 +23,12 @@
 }
 .map__yandex {
   height:362px;
-  background:url('../img/moscow-city-map.jpg') no-repeat;
+  background:url('../img/bg-map-mobile@1x.png') no-repeat;
+  background-size:100% auto;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background:url("../img/bg-map-mobile@2x.png") no-repeat;
+      background-size:100% auto;
+    }
 }
 .map__text-wrap {
   display:inline-block;
@@ -42,6 +47,12 @@
   }
   .map__yandex {
     height:395px;
+    background:url('../img/bg-map-tablet@1x.png') no-repeat;
+    background-size:100% auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background:url("../img/bg-map-tablet@2x.png") no-repeat;
+      background-size:100% auto;
+    }
   }
   .map__text {
     width:170px;
@@ -72,6 +83,12 @@
   }
   .map__yandex {
     height:400px;
+    background:url('../img/bg-map-desktop@1x.png') no-repeat;
+    background-size:100% auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background:url("../img/bg-map-desktop@2x.png") no-repeat;
+      background-size:100% auto;
+    }
   }
   .map__wrapper {
     position:absolute;

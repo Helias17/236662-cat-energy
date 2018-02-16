@@ -150,7 +150,7 @@ a.page-header__menu-link:hover::after {
     position:absolute;
     top:50px;
     left:0px;
-    border-bottom:2px solid;
+    border-bottom:2px solid #68b738;
     opacity:0.6;
   }
   a.page-header__menu-link:hover {
@@ -163,7 +163,7 @@ a.page-header__menu-link:hover::after {
     position:absolute;
     top:50px;
     left:0px;
-    border-bottom:2px solid;
+    border-bottom:2px solid #68b738;
     opacity:0.3;
   }
   a.page-header__menu-link:active {
@@ -176,7 +176,7 @@ a.page-header__menu-link:hover::after {
     position:absolute;
     top:50px;
     left:0px;
-    border-bottom:2px solid $color-black;
+    border-bottom:2px solid #68b738;
   }
   .page-header__menu-link_active-white::after {
     content:"";
@@ -189,6 +189,9 @@ a.page-header__menu-link:hover::after {
   }
   .page-header__menu-link_color {
     color:$color-black;
+  }
+  .page-header__menu-link_main::after {
+    border-color:$color-white;
   }
   .page-header__logo-text {
     margin-left:20px;
