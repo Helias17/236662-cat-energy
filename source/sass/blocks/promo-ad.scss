@@ -8,6 +8,10 @@
   border:20px solid #ffffff;
   margin:0 auto 15px;
   text-align:center;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background:url("../img/gift-photo-mobile@2x.jpg") no-repeat;
+      background-size:100% auto;
+    }
 }
 .promo-ad__gift {
   filter:invert(100%);
@@ -28,10 +32,14 @@
     align-items:center;
     max-width:none;
     height:260px;
-    background-size:100% auto;
-    background-position:left center;
     border:30px solid #ffffff;
     margin-bottom:45px;
+    background:url('../img/gift-photo-tablet@1x.jpg') no-repeat;
+    background-size: 100% 260px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background:url("../img/gift-photo-tablet@2x.jpg") no-repeat;
+      background-size: 100% 260px;
+    }
   }
   .promo-ad__gift {
     position:relative;
@@ -51,20 +59,27 @@
     flex-direction:column;
     width:245px;
     height:auto;
+    justify-content:flex-start;
     border-width:0;
     margin:0;
-    //box-sizing:content-box;
     flex-grow:0;
+    background:url('../img/gift-photo-desktop@1x.jpg') no-repeat;
+    background-size:auto 100%;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background:url("../img/gift-photo-desktop@2x.jpg") no-repeat;
+      background-size:auto 100%;
+    }
+    
   }
   .promo-ad__gift {
     position:static;
-    padding-top:60px;
+    padding-top:65px;
     margin:0;
   }
   .promo-ad__text {
     position:static;
     text-align:center;
-    padding:10px 0 0 0;
+    padding:62px 0 0 0;
     margin:0;
   }
 }

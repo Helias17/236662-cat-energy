@@ -109,15 +109,16 @@
   }
   .product-item__image {
     position:absolute;
-    bottom:70%;
-    left:20%;
+    bottom:300px;
+    left:0;
   }
   .product-item__title {
     margin-bottom:20px;
   }
   .product-item__image-tag {
-    height:210px;
-    width:216px;
+    margin:0;
+    height:auto;
+    width:324px;
   }
   .product-item__info {
     text-align:center;
@@ -186,8 +187,13 @@
     margin-bottom:140px;
   }
   .product-item__image {
-    bottom:70%;
-    left:5%;
+    bottom:300px;
+    left:0;
+  }
+  .product-item__image-tag {
+    margin:0;
+    height:auto;
+    width:245px;
   }
   .product-item__info {
     margin-bottom:0;

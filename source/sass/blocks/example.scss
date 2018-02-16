@@ -64,8 +64,14 @@
 }
 .example__image-wrapper {
   text-align:center;
-  height:245px;
+  height:240px;
   background:url("../img/before-mobile@1x.png") -20px 5px no-repeat;
+  background-size:auto 100%;
+  margin-bottom:5px;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url('../img/before-mobile@2x.png') -25px 10px no-repeat;
+    background-size:auto 100%;
+  }
 }
 .example__image {
   margin-left:-20px;
@@ -166,13 +172,23 @@
   .example__image-wrapper {
     display:flex;
     height:690px;
-    background:url("../img/before-desktopboris.png") 45px 80px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+    background:url("../img/before-tablet@1x.png") 45px 60px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+    background-size:690px auto, auto auto;
     flex-grow:1;
+    margin-bottom:0;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background:url("../img/before-tablet@2x.png") 45px 60px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+      background-size: 690px auto, auto auto;
+    }
   }
   .example__image-wrapper-after {
     display:flex;
-    background:url("../img/after-desktopboris.png") -245px 60px no-repeat, url("../img/bg_grey_after.png") left 230px repeat-x;
+    background:url("../img/after-tablet@1x.png") -340px 60px no-repeat, url("../img/bg_grey_after.png") left 230px repeat-x;
     flex-grow:1;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background:url("../img/after-tablet@2x.png") -340px 60px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+      background-size: 690px auto, auto auto;
+    }
   }
   .example__image {
     width:666px;
@@ -214,10 +230,20 @@
   }
   .example__image-wrapper {
     margin:0;
-    background-position:30px 60px,left 230px;
+    background:url("../img/before-desktop@1x.png") 30px 40px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+    background-size:690px auto, auto auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background:url("../img/before-desktop@2x.png") 30px 40px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+      background-size: 690px auto, auto auto;
+    }
   }
   .example__image-wrapper-after {
-    background-position:-275px 45px, left 230px;
+    background:url("../img/after-desktop@1x.png") -365px 40px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+    background-size:690px auto, auto auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background:url("../img/after-desktop@2x.png") -365px 40px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+      background-size: 690px auto, auto auto;
+    }
   }
   .example__title {
     margin-left:110px;
