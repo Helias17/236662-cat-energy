@@ -5,30 +5,38 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, target-densitydpi=device-dpi">
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo-image">
-        <img src="img/icon-logo-mobile.svg" width="40" height="40" alt="" class="page-header__logo-image-item">
+        <a href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/icon-logo-mobile.svg" width="40" height="40" alt="" class="page-header__logo-image-item">
+          </picture>
+        </a>
       </div>
       <div class="page-header__logo-text">
-        <img src="img/logo-mobile-header.svg" width="100" height="20" alt=""  class="page-header__logo-text-item">
+        <a href="index.html"><img src="img/logo-mobile-header.svg" width="100" height="20" alt=""  class="page-header__logo-text-item"></a>
       </div>
-      <a href="" class="page-header__menu-burger">
-        <img src="img/icon-mobile-menu.svg" width="30" height="20" alt=""  class="page-header__menu-burger-img">
+      <a href="#" class="page-header__menu-burger">
+      <!-- Чтобы поменять крестик на бургер нужно на строке ниже убрать класс page-header__menu-burger-img_close -->
+        <div class="page-header__menu-burger-img page-header__menu-burger-img_close"></div>
       </a>
     </div>
+    <!-- Чтобы спрятать меню нужно на следующей строке добавить класс page-header__menu-wrapper_hidden -->
     <nav class="page-header__menu-wrapper">
       <div class="page-header__menu-item">
-      <a href="index.html" class="page-header__menu-link page-header__menu-link_color">Главная</a>
+      <a href="index.html" class="page-header__menu-link page-header__menu-link_active-white">Главная</a>
       </div>
       <div class="page-header__menu-item">
-      <span class="page-header__menu-link  page-header__menu-link_color page-header__menu-link_active-black">Каталог продукции</span>
+      <span class="page-header__menu-link page-header__menu-link_current">Каталог продукции</span>
       </div>
       <div class="page-header__menu-item">
-      <a href="form.html" class="page-header__menu-link  page-header__menu-link_color">Подбор программы</a>
+      <a href="form.html" class="page-header__menu-link">Подбор программы</a>
       </div>
     </nav>
   </header>
@@ -351,7 +359,7 @@
       <button class="product-item__button">Заказать</button>
     </div>
     <div class="product-item product-item_all-products">
-      <img src="img/icon-close.svg" height="25" width="25" alt="" class="product-item__all-products-plus">
+      <img src="img/icon-plus.svg" height="25" width="25" alt="" class="product-item__all-products-plus">
       <p class="product-item__all-products-text">
       Показать еще 100500 товаров
       </p>
@@ -361,13 +369,15 @@
       <button class="product-item__all-products-button">Показать все</button>
     </div>
 
-    </div>
-  <h2 class="title-h2">Дополнительные товары</h2>
+  </div>
+  <div class="title-h2-wrapper">
+    <h2 class="title-h2">Дополнительные товары</h2>
+  </div>
     <div class="promo-wrapper">
-      <div class="more-products__wrapper">
+      <div class="more-products-wrapper">
         <div class="more-products">
           <p class="more-products__title">
-          Сахарозаменитель
+          Сахарозаменить
           </p>
           <div class="more-products__size">
           1 Упаковка (100 г)

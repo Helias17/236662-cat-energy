@@ -3,7 +3,7 @@
   line-height:18px;
   color:$color-111111;
   text-transform:uppercase;
-  padding:0 20px 0px 20px;
+  padding:0 30px 0px 20px;
   margin-top:0px;
 }
 .program-form__wrapper {
@@ -16,39 +16,97 @@
   text-transform:uppercase;
   border-bottom:1px solid $color-ededed;
 }
+.program-form__wrapper-1 {
+  padding-bottom:30px;
+}
 .program-form__wrapper-2 {
   font-size:16px;
   line-height:18px;
   color:#222222;
   text-transform:uppercase;
-  padding:20px 20px 0 20px;
+  padding:27px 20px 15px 20px;
+}
+.program-form__wrapper-2_textarea {
+  padding-bottom:30px;
+}
+.program-form__wrapper-2_products {
+  padding-top:30px;
+  padding-bottom:0px;
+}
+.program-form__wrapper-2_button {
+  padding-top:21px;
+  padding-bottom:0px;
 }
 .program-form__row {
   position:relative;
   display:flex;
   align-items:center;
-  margin-bottom:13px;
+  padding-bottom:13px;
+}
+.program-form__row_target {
+  padding-bottom:6px;
+}
+.program-form__row_products {
+  margin-bottom:0px;
+  padding-bottom:10px;
 }
 .program-form__input {
   flex-grow:1;
   font-family:Oswald;
   height:45px;
   border:1px solid #e6e6e6;
-  margin-left:15px;
+  margin-left:12px;
   font-size:14px;
   line-height:18px;
   color:$color-text;
   text-transform:uppercase;
   padding:0 15px;
 }
-.program-form__email, .program-form__phone {
+.program-form__wrapper_checkboxes {
+  padding-top:20px;
+}
+.program-form__checkbox {
+  display:none;
+}
+.program-form__radio {
+  display:none;
+}
+.program-form__label::before {
+  content:"";
+  display:inline-block;
+  width:30px;
+  height:30px;
+  border:1px solid #cfcfcf;
+  vertical-align:middle;
+  margin-right:15px;
+}
+.program-form__label_radio::before {
+  border-radius:50%;
+  margin-bottom:5px;
+}
+.program-form__radio:checked + .program-form__label::before {
+  background:url("../img/elipse-green.svg") no-repeat;
+  background-size:12px 12px;
+  background-position:9px 9px;
+}
+.program-form__checkbox:checked + .program-form__label::before {
+  background:url("../img/icon-tick.svg") no-repeat;
+  background-size:21px 16px;
+  background-position:5px 7px;
+}
+.program-form__email {
   position:absolute;
   right:15px;
-  top:37%;
+  top:15px;
+}
+.program-form__phone {
+  position:absolute;
+  right:15px;
+  top:15px;
 }
 .program-form__label {
-  margin:0 0 0 25px;
-  padding:6px 0;
+  margin:0;
+  padding:0;
 }
 .program-form__textarea {
   font-family:Oswald;
@@ -70,10 +128,16 @@
   line-height:20px;
   margin-bottom:25px;
 }
+.program-form__send-claim-button:hover {
+  background-color:#5eaa2f;
+}
+.program-form__send-claim-button:active {
+  color:#8fc46e;
+}
 .program-form__note-text {
   font-size:14px;
   line-height:16px;
-  font-family:Arial;
+  font-family:$font-text;
   color:$color-text;
   text-transform:none;
   text-align:center;
@@ -104,40 +168,71 @@
     margin:72px 70px 50px 70px;
     padding:0;
   }
+  .program-form__wrapper-2_textarea {
+    margin-bottom:45px;
+  }
   .program-form__wrapper-2_products {
     flex-direction:row;
-    margin-top:53px;
+    margin-top:55px;
     margin-right:0;
     margin-bottom:0;
   }
   .program-form__wrapper-2_button {
-    margin-top:15px;
+    margin-top:18px;
     margin-bottom:48px;
     flex-direction:row;
   }
   .program-form__row {
     margin-bottom:20px;
+    padding-bottom:0;
+  }
+  .program-form__row_target {
+    margin-bottom:5px;
   }
   .program-form__row_products {
-    width:47%;
-    padding-left:15px;
-    margin-bottom:40px;
+    width:49%;
+    padding-left:0px;
+    margin-bottom:32px;
   }
   .program-form__input {
     height:50px;
     font-size:20px;
+    padding:0 20px;
+    margin-left:20px;
+  }
+  .program-form__email {
+    right:20px;
+    top:20px;
   }
   .program-form__label {
     line-height:35px;
     padding:0;
   }
   .program-form__wrapper_checkboxes {
-    //margin-left:20px;
     margin-top:50px;
-    margin-bottom:80px;
-    padding-left:40px;
+    margin-bottom:55px;
+    padding-left:30px;
     padding-top:25px;
+    padding-bottom:10px;
     border:1px solid $color-ededed;
+  }
+  .program-form__label::before {
+    width:40px;
+    height:40px;
+  }
+  .program-form__label_radio::before {
+    border-radius:50%;
+    margin-bottom:5px;
+  }
+  .program-form__radio:checked + .program-form__label::before {
+    background:url("../img/elipse-green.svg") no-repeat;
+    background-size:20px 20px;
+    background-position:10px 10px;
+  }
+  .program-form__checkbox:checked + .program-form__label::before {
+    background:url("../img/icon-tick.svg") no-repeat;
+    background-size:21px 16px;
+    background-position:9px 11px;
   }
   .program-form__textarea {
     width:100%;
@@ -146,6 +241,7 @@
     line-height:30px;
     box-sizing:border-box;
     margin-bottom:25px;
+    padding:10px 20px;
   }
   .program-form__send-claim-button {
     height:50px;
@@ -156,7 +252,7 @@
   .program-form__note-text {
   font-size:16px;
   line-height:16px;
-  font-family:Arial;
+  font-family:$font-text;
   text-align:center;
   margin:0;
   padding:15px 0 0 0;
@@ -169,11 +265,14 @@
     margin-top:-110px;
     margin-left:0;
   }
+  .program-form__input {
+    margin-left:20px;
+  }
   .program-form__wrapper {
     padding:0;
   }
   .program-form__wrapper-1 {
-    padding:0 110px 0 110px;
+    padding:0 110px 65px 110px;
     display:flex;
     justify-content:space-between;
   }
@@ -187,10 +286,13 @@
     margin:0;
     padding:0 110px;
   }
+  .program-form__wrapper-2_textarea {
+    padding-bottom:65px;
+  }
   .program-form__wrapper_checkboxes {
     flex-direction:flex-start;
     width:570px;
-    padding:20px 0 15px 40px;
+    padding:20px 0 15px 30px;
     margin:10px 0 15px 80px;
     box-sizing:border-box;
     flex-grow:0;
@@ -214,13 +316,12 @@
     margin-right:80px;
   }
   .program-form__wrapper_desktop {
-    padding:40px 110px 0 110px;
+    padding:40px 110px 65px 110px;
     flex-direction:row;
   }
   .program-form__row_products {
     width:325px;
     box-sizing:border-box;
-    //border:1px solid red;
     flex-grow:0;
   }
   .program-form__textarea {

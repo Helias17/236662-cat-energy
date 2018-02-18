@@ -17,7 +17,7 @@
 .map__address {
   font-size:14px;
   line-height:20px;
-  font-family:Arial;
+  font-family:$font-text;
   color:$color-text;
   padding:27px 10px 27px 10px;
 }
@@ -41,7 +41,7 @@
     margin:0;
   }
   .map__wrapper {
-    padding:65px 70px 60px 70px;
+    padding:65px 75px 60px 70px;
     justify-content:space-between;
     align-items:flex-start;
   }
