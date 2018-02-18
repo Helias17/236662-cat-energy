@@ -82,8 +82,11 @@
 }
 @media all and (min-width: 1200px) {
   .page-footer {
-    padding:0px 110px;
+    padding:0px 0px;
     box-sizing:border-box;
+    max-width:1220px;
+    margin-left:auto;
+    margin-right:auto;
   }
   .page-footer__socials {
     display:flex;

@@ -52,7 +52,7 @@
 }
 .program-form__input {
   flex-grow:1;
-  font-family:Oswald;
+  font-family:$font-main;
   height:45px;
   border:1px solid #e6e6e6;
   margin-left:12px;
@@ -109,7 +109,7 @@
   padding:0;
 }
 .program-form__textarea {
-  font-family:Oswald;
+  font-family:$font-main;
   border:1px solid #e6e6e6;
   font-size:16px;
   line-height:18px;
@@ -260,7 +260,7 @@
 }
 @media all and (min-width: 1200px) {
   .program-form__text {
-    padding-left:110px;
+    padding-left:0px;
     padding-bottom:35px;
     margin-top:-110px;
     margin-left:0;
@@ -268,11 +268,16 @@
   .program-form__input {
     margin-left:20px;
   }
+  .program-form__wrapper-desktop {
+    max-width:1220px;
+    margin-left:auto;
+    margin-right:auto;
+  }
   .program-form__wrapper {
     padding:0;
   }
   .program-form__wrapper-1 {
-    padding:0 110px 65px 110px;
+    padding:0 0px 65px 0px;
     display:flex;
     justify-content:space-between;
   }
@@ -284,7 +289,7 @@
   }
   .program-form__wrapper-2 {
     margin:0;
-    padding:0 110px;
+    padding:0;
   }
   .program-form__wrapper-2_textarea {
     padding-bottom:65px;
@@ -316,13 +321,16 @@
     margin-right:80px;
   }
   .program-form__wrapper_desktop {
-    padding:40px 110px 65px 110px;
+    padding:40px 0px 65px 0px;
     flex-direction:row;
   }
   .program-form__row_products {
     width:325px;
     box-sizing:border-box;
     flex-grow:0;
+  }
+  .program-form__row_products:last-child {
+    width:auto;
   }
   .program-form__textarea {
     margin-top:45px;

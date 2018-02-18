@@ -26,7 +26,7 @@
   margin-bottom:7px;
 }
 .product-item__title-link {
-  font-family:Oswald;
+  font-family:$font-main;
   font-size:16px;
   line-height:20px;
   color:$color-111111;
@@ -64,7 +64,7 @@
   margin:10px 0px;
 }
 .product-item__all-products-text {
-  font-family: Oswald;
+  font-family: $font-main;
   font-size:16px;
   line-height:20px;
   color:$color-111111;
@@ -195,7 +195,7 @@
 }
 @media all and (min-width: 1200px) {
   .product-list {
-    padding:0 110px;
+    padding:0;
     margin-bottom:-55px;
   }
   .product-item {
@@ -222,6 +222,7 @@
     padding:40px 35px;
   }
   .product-item__all-products-small-text {
+  max-width:170px;
     padding:20px 0px;
   }
   .product-item__all-products-button {

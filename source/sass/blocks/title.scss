@@ -1,17 +1,15 @@
 .title-catalog {
-  font-family: Oswald;
+  font-family: $font-main;
   font-weight:normal;
   font-size:36px;
   margin:20px 20px 30px 20px;
 }
 .title-h2-wrapper {
-  //background:url('../img/green_bg.png') repeat-x;
-  //background-position:left 15px;
   background:linear-gradient(to bottom, #ffffff 14px, #68b738 14px, #68b738 17px, #ffffff 17px);
 }
 .title-h2 {
   display:inline-block;
-  font-family: Oswald;
+  font-family: $font-main;
   font-weight:normal;
   font-size:24px;
   line-height:24px;
@@ -51,14 +49,20 @@
 @media all and (min-width: 1200px) {
   .title-catalog {
     margin-top:180px;
-    margin-left:110px;
+    margin-left:0px;
     margin-bottom:155px;
   }
   .title-h2-wrapper {
-    padding-left:70px;
+    padding-left:0;
+  }
+  .title-h2-wrapper__desktop {
+    max-width:1220px;
+    margin-left:auto;
+    margin-right:auto;
   }
   .title-h2 {
     padding-left:40px;
+    margin-left:-40px;
   }
   .title-h2_form {
     margin-bottom:40px;

@@ -90,10 +90,16 @@
       background-size:100% auto;
     }
   }
+  .map__wrapper-1 {
+    position:relative;
+    max-width:1220px;
+    margin-left:auto;
+    margin-right:auto;
+  }
   .map__wrapper {
     position:absolute;
     top:100px;
-    left:110px;
+    left:0px;
     z-index:5;
     background-color:$color-white;
     padding-left:75px;

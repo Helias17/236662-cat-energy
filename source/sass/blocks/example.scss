@@ -186,7 +186,7 @@
     background:url("../img/after-tablet@1x.png") -340px 60px no-repeat, url("../img/bg_grey_after.png") left 230px repeat-x;
     flex-grow:1;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background:url("../img/after-tablet@2x.png") -340px 60px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+      background:url("../img/after-tablet@2x.png") -340px 60px no-repeat, url(../img/bg_grey_after.png) left 230px repeat-x;
       background-size: 690px auto, auto auto;
     }
   }
@@ -227,26 +227,32 @@
 @media all and (min-width: 1200px) {
   .example {
     padding-top:40px;
+    background:linear-gradient(to right, #f2f2f2 500px, #eaeaea 500px) no-repeat;;
+    background-position: 0px 199px;
   }
   .example__image-wrapper {
+    flex-grow:3;
     margin:0;
-    background:url("../img/before-desktop@1x.png") 30px 40px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+    background:url("../img/before-desktop@1x.png") 60px 40px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
     background-size:690px auto, auto auto;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background:url("../img/before-desktop@2x.png") 30px 40px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+      background:url("../img/before-desktop@2x.png") 60px 40px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
       background-size: 690px auto, auto auto;
     }
   }
   .example__image-wrapper-after {
-    background:url("../img/after-desktop@1x.png") -365px 40px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+    flex-grow:2;
+    background:url("../img/after-desktop@1x.png") -365px 40px no-repeat, url(../img/bg_grey_after.png) left 230px repeat-x;
     background-size:690px auto, auto auto;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background:url("../img/after-desktop@2x.png") -365px 40px no-repeat, url(../img/bg_grey_before.png) left 230px repeat-x;
+      background:url("../img/after-desktop@2x.png") -365px 40px no-repeat, url(../img/bg_grey_after.png) left 230px repeat-x;
       background-size: 690px auto, auto auto;
     }
   }
   .example__title {
-    margin-left:110px;
+    max-width:1220px;
+    margin-left:auto;
+    margin-right:auto;
   }
   .example__desc {
     width:440px;
@@ -261,12 +267,15 @@
     justify-content:stretch;
     margin-top:60px;
     background-color:#f2f2f2;
+    max-width:1220px;
+    margin-left:auto;
+    margin-right:auto;
   }
   .example__wrapper-4 {
     position:absolute;
     right:0px;
     top:-230px;
-    width:790px;
+    width:710px;
     flex-grow:1;
   }
   .example__image-wrapper-main {
@@ -279,7 +288,7 @@
   .example__wrapper-2 {
     padding:0;
     flex-grow:1;
-    padding-left:110px;
+    padding-left:0px;
   }
   .example__image {
     top:-170px;
@@ -300,6 +309,7 @@
   }
   .example__progressbar-wrapper {
     padding-bottom:65px;
-    left:14%;
+    right:-50px;
+    bottom:3px;
   }
 }
