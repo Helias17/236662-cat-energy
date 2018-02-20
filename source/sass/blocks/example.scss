@@ -15,7 +15,7 @@
 }
 .example__wrapper {
   display:flex;
-  justify-content:center;
+  justify-content:space-between;
   margin-bottom:0;
   margin-top:5px;
   color:$color-text;
@@ -69,7 +69,7 @@
   background-size:auto 100%;
   margin-bottom:5px;
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: url('../img/before-mobile@2x.png') -25px 10px no-repeat;
+    background:url('../img/before-mobile@2x.png') -20px 5px no-repeat;
     background-size:auto 100%;
   }
 }
@@ -167,7 +167,6 @@
     display:flex;
     flex-direction:row;
     justify-content:stretch;
-    //border:1px solid blue;
   }
   .example__image-wrapper {
     display:flex;
@@ -202,14 +201,32 @@
   }
   .example__progressbar-wrapper {
     position:absolute;
-    bottom:0;
+    bottom:-3px;
     left:13%;
     background-color:none;
     padding-bottom:70px;
   }
   .example__progressbar-text {
+    position:relative;
     font-size:20px;
     text-transform:uppercase;
+
+    &::before {
+      display:block;
+      position:absolute;
+      content:"";
+      width:100%;
+      border-bottom:1px dotted #bebebe;
+      top:30px;
+    }
+
+    &:hover::before {
+      border-bottom:1px solid #989898;
+    }
+
+    &:active::before {
+      border:none;
+    }
   }
   .example__progressbar-border {
     background-color:none;
@@ -218,10 +235,32 @@
     border:none;
   }
   .example__progressbar {
+    position:relative;
     width:430px;
     height:6px;
     background-color:#dcdcdc;
     border-radius:5px;
+  }
+  .example__progressbar-slider {
+    position:absolute;
+    left:200px;
+    top:-15px;
+    width:34px;
+    height:34px;
+    border:1px solid #cdcdcd;
+    border-radius:50%;
+    background:$color-white url('../img/elipse-green.svg') no-repeat;
+    background-size:8px 8px;
+    background-position:13px 13px;
+    box-shadow:0px 3px 7px 0px #cdcdcd;
+
+    &:hover {
+      box-shadow:0px 3px 7px 2px #cdcdcd;
+    }
+    &:active {
+      border-color:#68b738;
+      box-shadow:0px 3px 7px 2px #aaaaaa;
+    }
   }
 }
 @media all and (min-width: 1200px) {
@@ -302,14 +341,24 @@
     text-align:left;
     padding-top:30px;
     padding-bottom:35px;
-  margin-bottom:35px;
+    margin-bottom:35px;
   }
   .example__price {
     padding-left:60px;
   }
   .example__progressbar-wrapper {
     padding-bottom:65px;
-    right:-50px;
+    right:-45px;
     bottom:3px;
+  }
+  .example__progressbar-border {
+    margin-left:25px;
+  }
+  .example__progressbar-slider {
+    //left:200px;
+    //top:-15px;
+    width:32px;
+    height:32px;
+    background-position:12px 12px;
   }
 }

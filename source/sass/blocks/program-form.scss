@@ -119,6 +119,14 @@
   height:150px;
   padding:15px;
   box-sizing:border-box;
+
+  &::placeholder {
+  color:$color-text;
+  }
+
+  &::-moz-placeholder {
+  color:black;
+  }
 }
 .program-form__send-claim-button {
   @include green-button;

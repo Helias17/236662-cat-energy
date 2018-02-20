@@ -34,10 +34,10 @@
     border:30px solid #ffffff;
     margin-bottom:45px;
     background:url('../img/gift-photo-tablet@1x.jpg') no-repeat;
-    background-size: 100% 260px;
+    background-size: 100% auto;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background:url("../img/gift-photo-tablet@2x.jpg") no-repeat;
-      background-size: 100% 260px;
+      background-size: 100% auto;
     }
   }
   .promo-ad__gift {

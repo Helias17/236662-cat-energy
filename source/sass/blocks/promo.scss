@@ -1,4 +1,4 @@
-.promo {
+.promo__content {
   background:url('../img/index-background-mobile@1x.jpg') no-repeat;
   background-size:100% auto;
   padding:25px 20px 0 20px;
@@ -7,6 +7,9 @@
     background: url('../img/index-background-mobile@2x.jpg') no-repeat;
     background-size:100% auto;
   }
+}
+.promo__bg {
+  display:none;
 }
 .promo__title {
   color:$color-white;
@@ -37,8 +40,7 @@
 }
 
 @media all and (min-width: 768px) {
-
-  .promo {
+  .promo__content {
     position:relative;
     height:780px;
     background:none;
@@ -79,35 +81,45 @@
   }
 }
 @media all and (min-width: 1200px) {
-  .promo-wrapper {
-    display:flex;
-    justify-content:space-between;
-    padding:75px 0px 85px;
+  .promo__content {
+    position:relative;
+    max-width:1220px;
+    margin-left:auto;
+    margin-right:auto;
+    height:705px;
+    box-sizing:border-box;
+    padding-top:140px;
+    padding-left:80px;
+    margin-top:0;
+
+  }
+  .promo__bg {
+    position:absolute;
+    right:0px;
+    top:0px;
+    display:block;
+    width:47%;
+    height:696px;
+    background: #64a83b url('../img/index-background-desktop@1x.jpg') 0px top no-repeat ;
+    background-size:auto 100%;
+    z-index:-1;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url('../img/index-background-desktop@2x.jpg') right top no-repeat;
+      background-size:auto 100%;
+      z-index:-1;
+    }
+    @media all and (min-width: 1330px) {
+      background-position: right top;
+    }
   }
   .promo__title {
     width:430px;
     margin-top:90px;
   }
-  .promo {
-    position:relative;
-    height:705px;
-    max-width:1330px;
-    box-sizing:border-box;
-    background: url('../img/index-background-desktop@1x.jpg') right top no-repeat ;
-    background-size:600px 705px;
-    padding-top:140px;
-    margin-left:auto;
-    padding-left:110px;
-    margin-top:0;
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url('../img/index-background-desktop@2x.jpg') right top no-repeat;
-      background-size:600px 705px;
-    }
-  }
   .promo__image {
     position:absolute;
     top:140px;
-    left:480px;
+    left:450px;
     width:552px;
     height:499px;
   }
