@@ -14,14 +14,13 @@
     }
 }
 .promo-ad__gift {
-  filter:invert(100%);
   margin-top:65px;
 }
 .promo-ad__text {
   display:block;
   font-size:16px;
   line-height:120%;
-  font-family:Arial;
+  font-family:$font-text;
   color:$color-white;
   padding:40px 0 30px 0;
 }
@@ -35,10 +34,10 @@
     border:30px solid #ffffff;
     margin-bottom:45px;
     background:url('../img/gift-photo-tablet@1x.jpg') no-repeat;
-    background-size: 100% 260px;
+    background-size: 100% auto;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background:url("../img/gift-photo-tablet@2x.jpg") no-repeat;
-      background-size: 100% 260px;
+      background-size: 100% auto;
     }
   }
   .promo-ad__gift {
@@ -69,7 +68,7 @@
       background:url("../img/gift-photo-desktop@2x.jpg") no-repeat;
       background-size:auto 100%;
     }
-    
+
   }
   .promo-ad__gift {
     position:static;

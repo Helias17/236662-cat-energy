@@ -1,0 +1,19 @@
+.promo-wrapper__products {
+  padding:30px 20px 20px 20px;
+}
+@media all and (min-width: 768px) {
+  .promo-wrapper__products {
+    padding:77px 30px 38px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .promo-wrapper {
+    display:flex;
+    justify-content:space-between;
+    padding:75px 0px 85px;
+  }
+  .promo-wrapper__products {
+    padding:0 80px 0 0;
+    flex-grow:1;
+  }
+}

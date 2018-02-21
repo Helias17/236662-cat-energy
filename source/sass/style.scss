@@ -1,7 +1,9 @@
-@import "fonts.scss";
 @import "variables.scss";
+@import "fonts.scss";
 @import "base.scss";
 @import "mixins.scss";
+@import "blocks/page-wrapper.scss";
+@import "blocks/promo-wrapper.scss";
 @import "blocks/title.scss";
 @import "blocks/page-header.scss";
 @import "blocks/promo.scss";
@@ -11,7 +13,7 @@
 @import "blocks/map.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/product-list.scss";
-@import "blocks/all-products.scss";
+@import "blocks/product-item.scss";
 @import "blocks/more-products-wrapper.scss";
 @import "blocks/promo-ad.scss";
 @import "blocks/program-form.scss";

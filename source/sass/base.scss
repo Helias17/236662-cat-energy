@@ -2,12 +2,6 @@ body {
   padding:0px;
   margin:0px;
   background: #ffffff;
-  font-family: Oswald;
+  font-family: $font-main;
   font-weight:normal;
-}
-
-@media all and (min-width: 1200px) {
-  body {
-    width:1440px;
-  }
 }

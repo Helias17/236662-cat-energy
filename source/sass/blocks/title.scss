@@ -1,68 +1,60 @@
-.title-catalog {
-  font-family: Oswald;
+.title {
+  font-family: $font-main;
+  font-weight:normal;
+}
+.title_catalog {
+  font-family: $font-main;
   font-weight:normal;
   font-size:36px;
   margin:20px 20px 30px 20px;
 }
-.title-h2 {
-  display:block;
-  font-family: Oswald;
+
+.title_h2 {
+  display:inline-block;
+  font-family: $font-main;
   font-weight:normal;
   font-size:24px;
   line-height:24px;
   color:#111111;
-  margin:20px 0px 10px 20px;
+  background-color:$color-white;
+  padding:0 20px 0 20px;
+  margin:0;
 }
-.title-h2_form {
-  margin-top:30px;
+.title_h2-form {
+  margin:0px;
 }
-.title-h2__wrap {
+.title__wrap {
   display:block;
   margin:0;
   padding:0;
 }
 
 @media all and (min-width: 768px) {
-  .title-catalog {
+  .title_catalog {
     font-size:60px;
     margin-left:30px;
     margin-bottom:120px;
     margin-top:25px;
   }
-  .title-h2-wrapper {
-    background:url('../img/green_bg.png') repeat-x;
-    background-position:left 15px;
-    //border:1px solid red;
-    padding-left:30px;
-  }
-  .title-h2 {
-    display:inline-block;
+  .title_h2 {
     font-size:36px;
-    margin:0;
-    background-color:$color-white;
     padding:0 40px 0 40px;
     }
-  .title-h2__wrap {
+  .title__wrap {
     display:inline;
   }
 }
 @media all and (min-width: 1200px) {
-  .title-catalog {
+  .title_catalog {
     margin-top:180px;
-    margin-left:110px;
+    margin-left:0px;
     margin-bottom:155px;
   }
-   .title-h2-wrapper {
-    padding-left:70px;
-  }
-  .title-h2 {
-    display:block;
+  .title_h2 {
     padding-left:40px;
-    margin-left:0;
-    margin-top:60px;
+    margin-left:-40px;
   }
-  .title-h2_form {
-    margin-top:65px;
+  .title_h2-form {
     margin-bottom:40px;
   }
 }
